@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Let's Scale — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the mobile game Let's Scale: what data the game collects, why, who receives it and how to delete it.">
   <style>
     :root { color-scheme: light dark; }
     body {
@@ -15,137 +16,637 @@
       body { color: #e6e6e6; background: #141414; }
       a { color: #6fa8ff; }
       th, td { border-color: #333 !important; }
+      h2 { border-bottom-color: #333 !important; }
+      .summary { background: rgba(127,127,127,0.14) !important; }
+      .lang a[aria-current="true"] { color: #e6e6e6 !important; }
     }
-    h1 { font-size: 1.9rem; margin-bottom: 4px; }
+    h1 { font-size: clamp(1.45rem, 6vw, 1.9rem); line-height: 1.25; margin-bottom: 8px; overflow-wrap: break-word; hyphens: auto; }
     h2 { font-size: 1.25rem; margin-top: 2em; border-bottom: 1px solid #e2e2e2; padding-bottom: 4px; }
+    h3 { font-size: 1.05rem; margin-top: 1.6em; margin-bottom: 0.4em; }
     .meta { color: #777; font-size: 0.9rem; margin-bottom: 1.5em; }
-    table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95rem; }
+    .lang { font-size: 0.95rem; margin-bottom: 1.2em; }
+    .lang a { text-decoration: none; }
+    .lang a[aria-current="true"] { color: #1a1a1a; font-weight: 600; pointer-events: none; }
+    .summary { background: rgba(127,127,127,0.08); border-radius: 8px; padding: 4px 18px; margin: 1.2em 0; }
+    .table-wrap { overflow-x: auto; margin: 1em 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
     th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
     th { background: rgba(127,127,127,0.1); }
+    @media (max-width: 480px) {
+      body { padding: 24px 16px 64px; }
+      table { font-size: 0.82rem; }
+      th, td { padding: 6px 6px; hyphens: auto; }
+    }
     ul { padding-left: 1.3em; }
-    a { color: #0f5bd6; }
+    li { margin: 0.2em 0; }
+    a { color: #0f5bd6; overflow-wrap: anywhere; }
+    [hidden] { display: none !important; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Let's Scale</h1>
-  <p class="meta">
-    Effective date: October 19, 2026 &middot; Last updated: October 8, 2026
-  </p>
+  <nav class="lang" aria-label="Language / Язык">
+    <a href="#en" data-lang="en" lang="en">English</a> &middot; <a href="#ru" data-lang="ru" lang="ru">Русский</a>
+  </nav>
 
-  <p>
-    This Privacy Policy explains how <strong>Artem Svirinovskyi</strong>
-    (&ldquo;we&rdquo;, &ldquo;us&rdquo;) handles information in the mobile game
-    <strong>Let's Scale</strong> (the &ldquo;Game&rdquo;), available on the Apple App Store
-    and Google Play. By using the Game you agree to the practices described here.
-  </p>
+  <article id="en" lang="en">
+    <h1>Privacy Policy for Let's Scale</h1>
+    <p class="meta">Effective date: October 11, 2026 &middot; Last updated: October 11, 2026</p>
 
-  <h2>1. Information we collect</h2>
+    <p>
+      <strong>Let's Scale</strong> is a mobile game made by <strong>Artem Svirinovskyi</strong> (“we”, “us”).
+      It is available on the App Store and Google Play. This policy explains what data the game collects, why,
+      who receives it, how long we keep it and how you can delete it.
+    </p>
 
-  <p>The Game is playable without creating an account. Some data is collected automatically to run the leaderboards, and some only if you choose to sign in.</p>
+    <div class="summary">
+      <h2 style="border:0; margin-top:0.8em;">The short version</h2>
+      <ul>
+        <li>You can play without an account. On first launch the game creates a random player ID so that the leaderboards work.</li>
+        <li>Other players see your nickname, country and scores in the leaderboards. The nickname and country are optional.</li>
+        <li>Signing in with Apple or Google is optional. It keeps your progress in the cloud, so you can continue on another device.</li>
+        <li>The game shows ads from Google AdMob. Personalised ads and your device's advertising identifier are used only with your permission.</li>
+        <li>“Remove ads” is an optional one-time purchase. The App Store or Google Play handles the payment; we never see your card details.</li>
+        <li>We use Google Analytics for Firebase to see how the game is played. It doesn't receive your nickname, country or player ID.</li>
+        <li>You can delete your data in the game: <em>Profile → Delete account</em> (or <em>Delete my data</em>, if you haven't signed in). <a href="#delete">How to delete</a></li>
+        <li>We don't sell your personal data.</li>
+      </ul>
+    </div>
 
-  <table>
-    <tr><th>Data</th><th>When</th><th>Why</th></tr>
-    <tr>
-      <td>Anonymous user ID</td>
-      <td>Automatically at first launch</td>
-      <td>Identifies your device for the leaderboards without any personal details.</td>
-    </tr>
-    <tr>
-      <td>Email address &amp; name</td>
-      <td>Only if you sign in with Apple or Google</td>
-      <td>To create and manage your account and sync your progress across devices. (Apple &ldquo;Hide My Email&rdquo; is supported.)</td>
-    </tr>
-    <tr>
-      <td>Game progress (levels, collection, awards)</td>
-      <td>Only if you sign in</td>
-      <td>Saved in the cloud so you can continue on another device.</td>
-    </tr>
-    <tr>
-      <td>Nickname and country (optional)</td>
-      <td>Only if you enter them in your profile</td>
-      <td>Shown next to your result in the global, per-country, daily and weekly leaderboards. Without a nickname you appear as &ldquo;Player N&rdquo;. Offensive nicknames are filtered out.</td>
-    </tr>
-    <tr>
-      <td>Score, daily-set result (percent and points), player number</td>
-      <td>During play</td>
-      <td>To rank players in the leaderboards and award daily and weekly prizes.</td>
-    </tr>
-  </table>
+    <h2 id="collect">1. What data we collect</h2>
 
-  <p>
-    <strong>Stored only on your device:</strong> your settings, your profile photo, and your game progress
-    if you do not sign in. The photo never leaves your device and is not uploaded to our servers.
-  </p>
-  <p>
-    The current version of the Game contains <strong>no advertising, no analytics and no in-app purchases</strong>
-    and does not use your advertising identifier. If this changes in a future version, we will update
-    this policy before the change is released.
-  </p>
+    <h3>Created automatically</h3>
+    <div class="table-wrap"><table>
+      <tr><th>Data</th><th>When</th><th>Where it is stored</th><th>Why</th></tr>
+      <tr><td>Random player ID (Firebase user ID)</td><td>On first launch</td><td>Google Firebase Authentication</td><td>To link your leaderboard entry, results and cloud save to you, and to block fake scores</td></tr>
+      <tr><td>Total points and player number (“Player N”)</td><td>While you play</td><td>Google Cloud Firestore; visible to other players</td><td>Global and country leaderboards</td></tr>
+      <tr><td>Daily-set result (percent and points) and weekly total</td><td>After you finish the daily set</td><td>Cloud Firestore; visible to other players</td><td>Daily and weekly leaderboards</td></tr>
+    </table></div>
 
-  <h2>2. How we use information</h2>
-  <ul>
-    <li>Run the leaderboards: global, per-country, daily and weekly.</li>
-    <li>Create and manage your optional account and save your progress in the cloud.</li>
-    <li>Prevent cheating and abuse, and keep the service secure.</li>
-  </ul>
+    <h3>Added by you (optional)</h3>
+    <div class="table-wrap"><table>
+      <tr><th>Data</th><th>When</th><th>Where it is stored</th><th>Why</th></tr>
+      <tr><td>Nickname, up to 14 characters</td><td>If you enter one in your profile</td><td>Cloud Firestore; visible to other players</td><td>Shown next to your results. Without a nickname you appear as “Player N”. Offensive nicknames are filtered out.</td></tr>
+      <tr><td>Country</td><td>If you choose one in your profile. The game doesn't detect your location.</td><td>Cloud Firestore; visible to other players</td><td>Country leaderboard and a flag next to your name</td></tr>
+      <tr><td>Profile photo</td><td>If you add one</td><td>Only on your device</td><td>Shown in your profile. It is never uploaded, and other players don't see it.</td></tr>
+    </table></div>
 
-  <h2>3. Third-party services</h2>
-  <p>We share data only with the service provider needed to run the leaderboards:</p>
-  <ul>
-    <li><strong>Google Firebase</strong> (authentication, cloud database) &mdash;
-      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy &amp; Security</a></li>
-  </ul>
-  <p>We do not sell your personal data.</p>
+    <h3>If you sign in with Apple or Google (optional)</h3>
+    <p>Firebase Authentication links your Apple or Google account to your player ID. It stores:</p>
+    <ul>
+      <li>your Apple or Google account ID;</li>
+      <li>the email address that Apple or Google gives us. With Apple it can be a private “Hide My Email” address;</li>
+      <li>with Google sign-in, also the name and profile-picture link from your Google account. We don't show them to other players.</li>
+    </ul>
+    <p>If Apple shares your name on first sign-in, the game keeps it only on your device, to label your account in the profile.</p>
+    <p>
+      <strong>Cloud save.</strong> While you're signed in, the game saves your progress in Cloud Firestore: level results
+      and stars, collection cards, awards, daily-set history and streak, challenge records, and game settings (nickname,
+      country, units, language, colour, music). Only you can read your cloud save. If you sign out, the cloud save stays
+      in your account. Without signing in, your progress stays only on your device.
+    </p>
 
-  <h2>4. Data retention and deletion</h2>
-  <p>
-    We keep account, progress and leaderboard data while you use the Game. Daily and weekly results are
-    kept for a limited time for the leaderboards and prizes. You can permanently delete your account and
-    all associated cloud data <strong>directly in the Game</strong>: open your <em>profile &rarr; Delete account</em>.
-    This removes your leaderboard entry, your daily and weekly results and your cloud save from our systems,
-    and revokes Sign in with Apple.
-  </p>
-  <p>
-    You may also request deletion by contacting us at
-    <strong>support@vias.im</strong> and we will delete your data.
-  </p>
+    <h3>Ads (Google AdMob)</h3>
+    <p>
+      The game is free and shows ads from Google AdMob: a full-screen ad between levels and challenges (never during the
+      daily set) and optional rewarded videos that you choose to watch for an in-game bonus.
+    </p>
+    <p>The AdMob software in the game sends data directly to Google:</p>
+    <ul>
+      <li>your IP address, which Google uses to estimate your approximate location;</li>
+      <li>device and app information, such as device model, OS version and app version;</li>
+      <li>ad data: which ads you saw and tapped;</li>
+      <li>performance and crash information about the ads;</li>
+      <li>your device's advertising identifier: on iPhone (IDFA) only if you allow tracking; on Android, the Advertising ID.</li>
+    </ul>
+    <p>
+      We don't send Google your nickname, email, player ID or progress. We ask Google only for ads suitable for a general
+      audience (content rating “PG”). How Google uses data from apps:
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.
+      <a href="#choices">Section 4</a> explains your choices.
+    </p>
 
-  <h2>5. Security</h2>
-  <p>
-    All data transmitted between the Game and our service provider is encrypted in transit using
-    industry-standard HTTPS/TLS.
-  </p>
+    <h3>“Remove ads” purchase (RevenueCat)</h3>
+    <p>
+      You can buy “Remove ads” once. It turns off full-screen ads; rewarded videos stay available if you want them. The
+      App Store or Google Play handles the payment — we never see your card or payment details.
+    </p>
+    <p>
+      To confirm and restore the purchase, we use RevenueCat, Inc. The game sends RevenueCat your player ID. The store
+      sends it the purchase details: product, date, price, currency and the country of your store account. We've turned
+      off RevenueCat's automatic collection of device identifiers. If you sign in with the same Apple or Google account on
+      another device, your purchase comes with you.
+    </p>
 
-  <h2>6. Children&rsquo;s privacy</h2>
-  <p>
-    The Game is not directed to children under 13, and we do not knowingly collect personal
-    information from children under 13. If you believe a child has provided us with personal
-    information, please contact us and we will remove it.
-  </p>
+    <h3>Analytics (Google Analytics for Firebase)</h3>
+    <p>
+      To see which parts of the game work and which don't, the game sends Google Analytics for Firebase short reports
+      about play: which screens you open, which levels and challenges you start and finish, results in percent, settings
+      you change (for example, sound on or off), ads shown or watched, and the “Remove ads” purchase.
+    </p>
+    <p>
+      Firebase adds an app-instance ID it creates, device model, OS and app version, language, approximate location
+      (country or region, from the IP address) and session times.
+    </p>
+    <p>
+      Analytics doesn't receive your nickname, photo, chosen country, player ID, email or duel codes, and it doesn't use
+      your advertising identifier. Where the law requires consent (EEA, UK, Switzerland), analytics works only if you
+      agree in the consent form; without consent, the game sends nothing to Analytics.
+    </p>
 
-  <h2>7. International users</h2>
-  <p>
-    Our service provider may process and store data on servers located outside your country.
-    Where required, we rely on appropriate safeguards for such transfers.
-  </p>
+    <h3>Game Center (iPhone, optional)</h3>
+    <p>
+      If you're signed in to Game Center, the game sends Apple your achievements and two scores for the Game Center
+      leaderboards: total points and daily streak. Apple handles this data under its privacy policy. The game doesn't
+      read your Game Center ID or name.
+    </p>
 
-  <h2>8. Your rights</h2>
-  <p>
-    Depending on your location (for example under GDPR or CCPA), you may have the right to access,
-    correct or delete your personal data, or object to certain processing. To exercise these rights,
-    use the in-game account deletion or contact us at the email below.
-  </p>
+    <h3>Stored only on your device</h3>
+    <ul>
+      <li>settings: sound, music, vibration, units, language, reminders;</li>
+      <li>the profile photo and the name from Apple (see above);</li>
+      <li>your progress, if you haven't signed in;</li>
+      <li>the list of players whose names you've hidden in the leaderboards.</li>
+    </ul>
+    <p>
+      <strong>Result pictures.</strong> When you share a result, you can choose “Save Image” in the system share sheet.
+      The game can only add pictures to your photo library; it never reads it.
+    </p>
+    <p>
+      <strong>Reminders.</strong> Reminders are local notifications that your device schedules, between 9:00 and 22:00
+      local time. No server is involved. You can turn them off in the game settings or in your device settings.
+    </p>
+    <p>
+      <strong>Duels.</strong> A duel code is created on your device. It contains the set of pairs and your results. You
+      decide whom to send it to. The code doesn't go through our servers.
+    </p>
 
-  <h2>9. Changes to this policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. We will revise the &ldquo;Last updated&rdquo;
-    date above and, for significant changes, provide notice within the Game or store listing.
-  </p>
+    <h3>If you email us</h3>
+    <p>We receive your email address and what you write. We use it only to answer you.</p>
 
-  <h2>10. Contact</h2>
-  <p>
-    If you have any questions about this Privacy Policy, contact us at:<br>
-    <strong>support@vias.im</strong>
-  </p>
+    <h3>What we don't collect</h3>
+    <p>
+      Precise location, contacts, camera, microphone, contents of your photo library, health data, browsing history and
+      payment card details. There is no chat: players can't send each other messages.
+    </p>
+
+    <h2 id="use">2. Why we use data and on what legal basis</h2>
+    <div class="table-wrap"><table>
+      <tr><th>Purpose</th><th>Data</th><th>Legal basis (EEA and UK)</th></tr>
+      <tr><td>Run the game: leaderboards, daily and weekly results, account, cloud save, purchase restore</td><td>Player ID, nickname, country, scores, results, account ID and email, cloud save, purchase details</td><td>Performance of a contract — providing the game you asked for</td></tr>
+      <tr><td>Fair play and security: blocking fake scores and abuse</td><td>Player ID, scores, time of each update</td><td>Legitimate interests</td></tr>
+      <tr><td>Personalised ads</td><td>Advertising identifier, ad data, approximate location</td><td>Your consent</td></tr>
+      <tr><td>Non-personalised ads that keep the game free</td><td>Ad data, approximate location, device information</td><td>Legitimate interests, within the choices you made in the consent form</td></tr>
+      <tr><td>Improve the game</td><td>Analytics data</td><td>Your consent in the EEA, UK and Switzerland; legitimate interests elsewhere</td></tr>
+      <tr><td>Answer your emails</td><td>Email address, message</td><td>Legitimate interests</td></tr>
+    </table></div>
+    <p>We don't make automated decisions about you that have legal or similarly significant effects.</p>
+
+    <h2 id="share">3. Who receives data</h2>
+    <ul>
+      <li><strong>Google</strong> — Firebase Authentication and Cloud Firestore (account, leaderboards, results, cloud save),
+        Google Analytics for Firebase (analytics), Google AdMob and the User Messaging Platform (ads and the consent form),
+        Google Sign-In and Google Play (if you use them). Firebase works for us as a service provider. AdMob also uses data
+        for Google's own purposes, as described in Google's policies:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>,
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a>.</li>
+      <li><strong>RevenueCat, Inc.</strong> — confirms and restores the “Remove ads” purchase.
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+      <li><strong>Apple</strong> — Sign in with Apple, App Store payments, Game Center and the tracking permission on iPhone.
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</li>
+      <li><strong>Other players</strong> — see your nickname, country, points, player number and daily and weekly results in the leaderboards.</li>
+      <li><strong>Authorities</strong> — only if the law requires it.</li>
+    </ul>
+    <p>We don't sell your personal data and don't give it to anyone else.</p>
+
+    <h2 id="choices">4. Ads, consent and tracking: your choices</h2>
+    <ul>
+      <li><strong>Consent form (EEA, UK, Switzerland and other regions where required).</strong> Before any ad loads, the
+        game shows Google's consent form. Until you make a choice, ads don't load. If you don't agree to personalised ads, you'll see non-personalised or limited ads. You can
+        change your choice at any time: <em>Settings → Ad privacy settings</em>, or <em>Profile → Privacy settings</em>.
+        These buttons appear where the law requires them.</li>
+      <li><strong>Tracking on iPhone (App Tracking Transparency).</strong> iOS asks whether the game may track you — right
+        before the first ad or on the second launch. Until you answer, the game asks only for non-personalised ads. If you
+        allow tracking, Google may use your IDFA to show more relevant ads and measure them. If you don't, Google doesn't
+        receive the IDFA, and you still see ads, just less relevant ones. To change it: <em>iPhone Settings → Privacy &amp;
+        Security → Tracking</em>.</li>
+      <li><strong>Android.</strong> You can reset or delete your Advertising ID in your device settings (usually
+        <em>Settings → Privacy → Ads</em>).</li>
+      <li><strong>US state privacy laws.</strong> Under some US state laws, such as California's, personalised ads from
+        Google may count as “sharing” personal data for targeted advertising. To opt out, use Privacy settings in the game
+        where shown, turn off tracking on iPhone, or delete your Advertising ID on Android.</li>
+    </ul>
+
+    <h2 id="retention">5. How long we keep data</h2>
+    <div class="table-wrap"><table>
+      <tr><th>Data</th><th>How long</th></tr>
+      <tr><td>Player ID, leaderboard entry, daily and weekly results, cloud save</td><td>Until you delete them in the game or ask us to</td></tr>
+      <tr><td>Account data from Apple or Google (account ID, email, name)</td><td>Until you delete your account</td></tr>
+      <tr><td>Purchase record at RevenueCat</td><td>As long as needed to restore your purchase and keep accounting records. We delete it on request.</td></tr>
+      <tr><td>Analytics data</td><td>Up to 14 months; then Google deletes it automatically</td></tr>
+      <tr><td>Ad data at Google</td><td>Under Google's policies</td></tr>
+      <tr><td>Your emails to us</td><td>Up to 12 months after we answer</td></tr>
+      <tr><td>Data on your device</td><td>Until you delete the game or your data</td></tr>
+    </table></div>
+
+    <h2 id="delete">6. How to delete your account and data</h2>
+    <p>This section explains how to delete your data in <strong>Let's Scale</strong> by <strong>Artem Svirinovskyi</strong>.</p>
+    <p><strong>In the game, if you signed in with Apple or Google:</strong> <em>Profile → Delete account</em>. The game asks
+      you to sign in once more to confirm it's you. Then it permanently deletes:</p>
+    <ul>
+      <li>your cloud save;</li>
+      <li>your daily and weekly results for the days your device remembers — about the last two months;</li>
+      <li>your leaderboard entry;</li>
+      <li>your Firebase account (account ID, email, name);</li>
+      <li>your progress, nickname, country and photo on this device.</li>
+    </ul>
+    <p>It also revokes Sign in with Apple.</p>
+    <p><strong>In the game, if you haven't signed in:</strong> <em>Profile → Delete my data</em>. The game deletes your
+      leaderboard entry, your daily and weekly results for about the last two months and your player ID, and starts over
+      on this device.</p>
+    <p>If something goes wrong — for example, there's no internet — nothing is deleted, and you can try again.
+      Uninstalling the game doesn't delete data on our servers. If you played without signing in and then reinstalled the
+      game, it got a new player ID and can't delete data saved under the old one — write to us, and we'll delete it.</p>
+    <p><strong>By email:</strong> write to <strong>support@vias.im</strong> from any address. Tell us your player name or
+      number from the game, or the email you used to sign in. We'll delete your data within 30 days and reply to confirm.</p>
+    <p><strong>What stays after deletion:</strong></p>
+    <ul>
+      <li>daily and weekly results that the game can't find from your device: those older than about two months, and
+        those saved under an earlier player ID — for example, before you reinstalled the game or signed in to an account
+        you already had. Each such entry keeps the nickname, country and “Player N” number you had then, the percent and
+        points, and the random player ID. We don't delete them automatically. Write to <strong>support@vias.im</strong>
+        with your player name or number, and we'll delete them within 30 days;</li>
+      <li>the purchase record at RevenueCat — we delete it if you ask by email. Apple and Google keep their own purchase records under their policies;</li>
+      <li>empty technical records that contain only the random player ID, without a name or score. After deletion they can't be linked to you;</li>
+      <li>analytics data — it isn't linked to your account and is deleted automatically (<a href="#retention">section 5</a>);</li>
+      <li>data that Google AdMob has collected — you can reset your advertising identifier in your device settings;</li>
+      <li>Game Center achievements and scores — you manage them in your Apple account.</li>
+    </ul>
+    <p>If you find anything else left, write to us and we'll remove it.</p>
+
+    <h2 id="children">7. Children</h2>
+    <p>
+      Let's Scale is for a general audience and isn't directed at children under 13 (or the minimum age in your country).
+      The game doesn't ask for age. Ads are limited to the “PG” content rating. We don't knowingly collect personal data
+      from children under 13. If you're a parent or guardian and think your child has given us personal data, write to
+      support@vias.im or use <em>Profile → Delete account</em>, and we'll delete it.
+    </p>
+
+    <h2 id="security">8. Security</h2>
+    <p>
+      The game sends all data over encrypted connections (HTTPS/TLS). Firestore security rules let only you read your
+      cloud save, and only you can change or delete your leaderboard entry and results. No system is perfectly secure,
+      so we collect as little as the game needs.
+    </p>
+
+    <h2 id="transfers">9. International data transfers</h2>
+    <p>
+      Cloud Firestore keeps the leaderboards, results and cloud saves in the European Union (Google's “eur3” location).
+      Firebase Authentication, Google Analytics, AdMob and RevenueCat may process data in the United States and other
+      countries. Where the law requires it, these transfers rely on safeguards such as the EU Standard Contractual
+      Clauses or the EU–US Data Privacy Framework.
+    </p>
+
+    <h2 id="rights">10. Your rights</h2>
+    <p>Depending on where you live — for example, under the GDPR, the UK GDPR or California's CCPA — you have the right to:</p>
+    <ul>
+      <li>access your data and get a copy;</li>
+      <li>correct it — you can change your nickname and country in the profile at any time;</li>
+      <li>delete it (<a href="#delete">section 6</a>);</li>
+      <li>object to or restrict processing;</li>
+      <li>withdraw consent at any time (<a href="#choices">section 4</a>). This doesn't affect processing that happened before;</li>
+      <li>opt out of the “sale” or “sharing” of personal data for targeted advertising (<a href="#choices">section 4</a>);</li>
+      <li>not be treated differently for using these rights.</li>
+    </ul>
+    <p>
+      To use them, write to support@vias.im. We'll answer within one month. To make sure the request is yours, we may ask
+      for your player name or number. If you live in the EEA or the UK, you can also complain to your local data
+      protection authority.
+    </p>
+
+    <h2 id="changes">11. Changes to this policy</h2>
+    <p>
+      If we change how the game handles data, we'll update this policy and the “Last updated” date before the change
+      reaches the game. For significant changes, we'll also tell you in the game or in the store listing.
+    </p>
+
+    <h2 id="contact">12. Contact</h2>
+    <p>Questions about this policy or your data:<br><strong>support@vias.im</strong></p>
+    <p class="meta">This policy is available in English and <a href="#ru" lang="ru">Russian</a>. If the two versions differ, the English version applies.</p>
+  </article>
+
+  <article id="ru" lang="ru">
+    <h1>Политика конфиденциальности Let's Scale</h1>
+    <p class="meta">Действует с 11 октября 2026 &middot; Обновлена 11 октября 2026</p>
+
+    <p>
+      <strong>Let's Scale</strong> — мобильная игра <strong>Артёма Свириновского</strong> («мы»). Она доступна в App Store
+      и Google Play. Здесь написано, какие данные собирает игра, зачем, кто их получает, сколько мы их храним и как их удалить.
+    </p>
+
+    <div class="summary">
+      <h2 style="border:0; margin-top:0.8em;">Коротко</h2>
+      <ul>
+        <li>Играть можно без аккаунта. При первом запуске игра создаёт случайный номер игрока, чтобы работал рейтинг.</li>
+        <li>Другие игроки видят в рейтинге ваш ник, страну и очки. Ник и страна — по желанию.</li>
+        <li>Вход через Apple или Google — по желанию. Он хранит прогресс в облаке, чтобы продолжить на другом устройстве.</li>
+        <li>В игре есть реклама Google AdMob. Персонализированная реклама и рекламный идентификатор устройства — только с вашего разрешения.</li>
+        <li>«Убрать рекламу» — разовая покупка по желанию. Оплату проводит App Store или Google Play, данные карты мы не видим.</li>
+        <li>Мы пользуемся Google Analytics for Firebase, чтобы понимать, как играют. Ник, страну и номер игрока аналитика не получает.</li>
+        <li>Удалить данные можно в игре: <em>«Профиль» → «Удалить аккаунт»</em> (или <em>«Удалить мои данные»</em>, если вы не входили). <a href="#ru-delete">Как удалить</a></li>
+        <li>Мы не продаём ваши персональные данные.</li>
+      </ul>
+    </div>
+
+    <h2 id="ru-collect">1. Какие данные мы собираем</h2>
+
+    <h3>Создаются сами</h3>
+    <div class="table-wrap"><table>
+      <tr><th>Данные</th><th>Когда</th><th>Где хранятся</th><th>Зачем</th></tr>
+      <tr><td>Случайный номер игрока (ID пользователя Firebase)</td><td>При первом запуске</td><td>Google Firebase Authentication</td><td>Связать с вами строку в рейтинге, результаты и облачное сохранение; не пускать поддельные очки</td></tr>
+      <tr><td>Очки и номер «Игрок N»</td><td>Во время игры</td><td>Google Cloud Firestore; видны другим игрокам</td><td>Общий рейтинг и рейтинг по странам</td></tr>
+      <tr><td>Результат набора дня (проценты и очки) и сумма за неделю</td><td>После набора дня</td><td>Cloud Firestore; видны другим игрокам</td><td>Рейтинги дня и недели</td></tr>
+    </table></div>
+
+    <h3>Добавляете вы (по желанию)</h3>
+    <div class="table-wrap"><table>
+      <tr><th>Данные</th><th>Когда</th><th>Где хранятся</th><th>Зачем</th></tr>
+      <tr><td>Ник до 14 знаков</td><td>Если впишете его в профиле</td><td>Cloud Firestore; виден другим игрокам</td><td>Показывается рядом с результатами. Без ника вы — «Игрок N». Оскорбительные ники отсеиваются.</td></tr>
+      <tr><td>Страна</td><td>Если выберете её в профиле. Местоположение игра не определяет.</td><td>Cloud Firestore; видна другим игрокам</td><td>Рейтинг по странам и флаг рядом с именем</td></tr>
+      <tr><td>Фото профиля</td><td>Если добавите</td><td>Только на устройстве</td><td>Показывается в профиле. Никуда не загружается, другие игроки его не видят.</td></tr>
+    </table></div>
+
+    <h3>Если вы входите через Apple или Google (по желанию)</h3>
+    <p>Firebase Authentication привязывает учётную запись Apple или Google к номеру игрока и хранит:</p>
+    <ul>
+      <li>идентификатор учётной записи Apple или Google;</li>
+      <li>адрес почты, который передаёт Apple или Google. У Apple это может быть скрытый адрес «Скрыть e-mail»;</li>
+      <li>при входе через Google — ещё имя и ссылку на фото из профиля Google. Другим игрокам мы их не показываем.</li>
+    </ul>
+    <p>Имя, если Apple передаст его при первом входе, хранится только на устройстве — им подписан аккаунт в профиле.</p>
+    <p>
+      <strong>Облачное сохранение.</strong> Пока вы вошли, игра хранит прогресс в Cloud Firestore: результаты и звёзды
+      уровней, карточки коллекции, награды, историю наборов дня и серию, рекорды испытаний и настройки игры (ник, страна,
+      единицы, язык, цвет, музыка). Прочитать сохранение можете только вы. Если выйти из аккаунта, сохранение остаётся в
+      нём. Без входа прогресс хранится только на устройстве.
+    </p>
+
+    <h3>Реклама (Google AdMob)</h3>
+    <p>
+      Игра бесплатная и показывает рекламу Google AdMob: полноэкранное объявление между уровнями и испытаниями (никогда —
+      во время набора дня) и ролики за награду, которые вы смотрите по желанию ради бонуса в игре.
+    </p>
+    <p>Программа AdMob внутри игры сама передаёт Google:</p>
+    <ul>
+      <li>IP-адрес — по нему Google определяет примерное местоположение;</li>
+      <li>сведения об устройстве и приложении: модель, версию системы и приложения;</li>
+      <li>данные о рекламе: какие объявления вы видели и на какие нажимали;</li>
+      <li>данные о скорости и сбоях рекламы;</li>
+      <li>рекламный идентификатор устройства: на iPhone (IDFA) — только если вы разрешили отслеживание; на Android — рекламный идентификатор.</li>
+    </ul>
+    <p>
+      Ваш ник, почту, номер игрока и прогресс мы Google не передаём. Мы запрашиваем только объявления для общей аудитории
+      (рейтинг Google «PG»). Как Google использует данные из приложений:
+      <a href="https://policies.google.com/technologies/partner-sites?hl=ru" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.
+      Какой выбор у вас есть — в <a href="#ru-choices">разделе 4</a>.
+    </p>
+
+    <h3>Покупка «Убрать рекламу» (RevenueCat)</h3>
+    <p>
+      «Убрать рекламу» покупается один раз и отключает полноэкранную рекламу. Ролики за награду остаются — по желанию.
+      Оплату проводит App Store или Google Play — данные карты и платежа мы не видим.
+    </p>
+    <p>
+      Чтобы подтвердить и восстановить покупку, мы пользуемся RevenueCat, Inc. Игра передаёт RevenueCat номер игрока, а
+      магазин — сведения о покупке: товар, дату, цену, валюту и страну учётной записи магазина. Автоматический сбор
+      идентификаторов устройства в RevenueCat мы выключили. Если вы войдёте тем же Apple ID или Google на другом
+      устройстве, покупка перейдёт вместе с вами.
+    </p>
+
+    <h3>Аналитика (Google Analytics for Firebase)</h3>
+    <p>
+      Чтобы понимать, что в игре работает, а что нет, игра отправляет в Google Analytics for Firebase короткие отчёты об
+      игре: какие экраны вы открываете, какие уровни и испытания начинаете и заканчиваете, результаты в процентах, какие
+      настройки меняете (например, звук вкл./выкл.), показанную и просмотренную рекламу и покупку «Убрать рекламу».
+    </p>
+    <p>
+      Firebase добавляет созданный им идентификатор установки приложения, модель устройства, версию системы и приложения,
+      язык, примерное местоположение (страна или регион — по IP-адресу) и время сеансов.
+    </p>
+    <p>
+      Ник, фото, выбранную страну, номер игрока, почту и коды дуэлей аналитика не получает, рекламный идентификатор не
+      использует. Там, где закон требует согласия (ЕЭЗ, Великобритания, Швейцария), аналитика работает, только если вы
+      согласились в окне согласия; без согласия игра ничего не отправляет.
+    </p>
+
+    <h3>Game Center (iPhone, по желанию)</h3>
+    <p>
+      Если вы вошли в Game Center, игра отправляет Apple ваши достижения и два результата для таблиц Game Center: очки и
+      серию дней. Apple обрабатывает их по своей политике конфиденциальности. Идентификатор и имя в Game Center игра не читает.
+    </p>
+
+    <h3>Хранится только на устройстве</h3>
+    <ul>
+      <li>настройки: звук, музыка, вибрация, единицы, язык, напоминания;</li>
+      <li>фото профиля и имя от Apple (см. выше);</li>
+      <li>прогресс, если вы не входили;</li>
+      <li>список игроков, чьи имена вы скрыли в рейтинге.</li>
+    </ul>
+    <p>
+      <strong>Картинка результата.</strong> Когда вы делитесь результатом, в системном окне «Поделиться» можно выбрать
+      «Сохранить изображение». Игра может только добавить картинку в «Фото» и никогда не читает медиатеку.
+    </p>
+    <p>
+      <strong>Напоминания.</strong> Это локальные уведомления, которые планирует само устройство, с 9:00 до 22:00 по
+      местному времени. Сервер в этом не участвует. Выключить их можно в настройках игры или устройства.
+    </p>
+    <p>
+      <strong>Дуэли.</strong> Код дуэли создаётся на устройстве. В нём набор пар и ваши результаты. Кому его отправить,
+      решаете вы. Через наши серверы код не проходит.
+    </p>
+
+    <h3>Если вы пишете нам</h3>
+    <p>Мы получаем ваш адрес почты и текст письма и используем их только для ответа.</p>
+
+    <h3>Чего мы не собираем</h3>
+    <p>
+      Точное местоположение, контакты, камеру, микрофон, содержимое медиатеки, данные о здоровье, историю браузера и
+      данные карт. Чата нет: игроки не могут писать друг другу.
+    </p>
+
+    <h2 id="ru-use">2. Зачем мы используем данные и на каком основании</h2>
+    <div class="table-wrap"><table>
+      <tr><th>Цель</th><th>Данные</th><th>Основание (ЕЭЗ и Великобритания)</th></tr>
+      <tr><td>Работа игры: рейтинги, результаты дня и недели, аккаунт, облачное сохранение, восстановление покупки</td><td>Номер игрока, ник, страна, очки, результаты, ID учётной записи и почта, облачное сохранение, сведения о покупке</td><td>Исполнение договора — игра, которой вы пользуетесь</td></tr>
+      <tr><td>Честная игра и безопасность: защита от поддельных очков и злоупотреблений</td><td>Номер игрока, очки, время записи</td><td>Законный интерес</td></tr>
+      <tr><td>Персонализированная реклама</td><td>Рекламный идентификатор, данные о рекламе, примерное местоположение</td><td>Ваше согласие</td></tr>
+      <tr><td>Неперсонализированная реклама, на которую живёт бесплатная игра</td><td>Данные о рекламе, примерное местоположение, сведения об устройстве</td><td>Законный интерес — в рамках выбора в окне согласия</td></tr>
+      <tr><td>Улучшение игры</td><td>Данные аналитики</td><td>Согласие в ЕЭЗ, Великобритании и Швейцарии; законный интерес в остальных странах</td></tr>
+      <tr><td>Ответы на письма</td><td>Адрес почты, текст письма</td><td>Законный интерес</td></tr>
+    </table></div>
+    <p>Автоматических решений, которые имеют для вас юридические или похожие серьёзные последствия, мы не принимаем.</p>
+
+    <h2 id="ru-share">3. Кто получает данные</h2>
+    <ul>
+      <li><strong>Google</strong> — Firebase Authentication и Cloud Firestore (аккаунт, рейтинги, результаты, облачное
+        сохранение), Google Analytics for Firebase (аналитика), Google AdMob и User Messaging Platform (реклама и окно
+        согласия), вход через Google и Google Play (если вы ими пользуетесь). Firebase работает на нас как обработчик.
+        AdMob использует данные и в собственных целях Google — по правилам Google:
+        <a href="https://policies.google.com/privacy?hl=ru" target="_blank" rel="noopener">политика конфиденциальности Google</a>,
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a>.</li>
+      <li><strong>RevenueCat, Inc.</strong> — подтверждает и восстанавливает покупку «Убрать рекламу».
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">политика RevenueCat</a>.</li>
+      <li><strong>Apple</strong> — вход через Apple, оплата в App Store, Game Center и разрешение на отслеживание на iPhone.
+        <a href="https://www.apple.com/legal/privacy/ru/" target="_blank" rel="noopener">политика Apple</a>.</li>
+      <li><strong>Другие игроки</strong> — видят в рейтингах ваш ник, страну, очки, номер игрока и результаты дня и недели.</li>
+      <li><strong>Государственные органы</strong> — только если этого требует закон.</li>
+    </ul>
+    <p>Мы не продаём ваши персональные данные и никому больше их не передаём.</p>
+
+    <h2 id="ru-choices">4. Реклама, согласие и отслеживание: ваш выбор</h2>
+    <ul>
+      <li><strong>Окно согласия (ЕЭЗ, Великобритания, Швейцария и другие регионы, где это требуется).</strong> Прежде чем
+        загрузить рекламу, игра показывает окно согласия Google. Пока вы не сделали выбор, реклама не загружается. Если не согласиться на персонализированную рекламу, она будет неперсонализированной или ограниченной. Изменить выбор можно в любой момент: <em>«Настройки» → «Согласие на рекламу»</em> или
+        <em>«Профиль» → «Настройки конфиденциальности»</em>. Эти кнопки появляются там, где этого требует закон.</li>
+      <li><strong>Отслеживание на iPhone (App Tracking Transparency).</strong> iOS спрашивает, можно ли игре вас
+        отслеживать, — прямо перед первой рекламой или при втором запуске. Пока вы не ответили, игра запрашивает только
+        неперсонализированную рекламу. Если разрешить, Google может использовать IDFA, чтобы показывать более подходящую
+        рекламу и измерять её. Если отказать, Google не получит IDFA, а реклама останется — просто менее подходящая.
+        Изменить выбор: <em>«Настройки» iPhone → «Конфиденциальность и безопасность» → «Отслеживание»</em>.</li>
+      <li><strong>Android.</strong> Рекламный идентификатор можно сбросить или удалить в настройках устройства (обычно
+        <em>«Настройки» → «Конфиденциальность» → «Реклама»</em>).</li>
+      <li><strong>Законы штатов США.</strong> По законам некоторых штатов, например Калифорнии, персонализированная
+        реклама Google может считаться «передачей» (sharing) персональных данных для таргетированной рекламы. Чтобы
+        отказаться, воспользуйтесь кнопкой «Настройки конфиденциальности» в игре (там, где она есть), выключите
+        отслеживание на iPhone или удалите рекламный идентификатор на Android.</li>
+    </ul>
+
+    <h2 id="ru-retention">5. Сколько мы храним данные</h2>
+    <div class="table-wrap"><table>
+      <tr><th>Данные</th><th>Срок</th></tr>
+      <tr><td>Номер игрока, строка в рейтинге, результаты дня и недели, облачное сохранение</td><td>Пока вы не удалите их в игре или не попросите нас</td></tr>
+      <tr><td>Данные учётной записи Apple или Google (ID, почта, имя)</td><td>Пока вы не удалите аккаунт</td></tr>
+      <tr><td>Запись о покупке в RevenueCat</td><td>Пока она нужна для восстановления покупки и учёта. Удалим по просьбе.</td></tr>
+      <tr><td>Данные аналитики</td><td>До 14 месяцев, затем Google удаляет их сам</td></tr>
+      <tr><td>Данные рекламы у Google</td><td>По правилам Google</td></tr>
+      <tr><td>Ваши письма нам</td><td>До 12 месяцев после ответа</td></tr>
+      <tr><td>Данные на устройстве</td><td>Пока вы не удалите игру или свои данные</td></tr>
+    </table></div>
+
+    <h2 id="ru-delete">6. Как удалить аккаунт и данные</h2>
+    <p>Здесь написано, как удалить ваши данные в игре <strong>Let's Scale</strong> (разработчик — <strong>Артём Свириновский</strong>).</p>
+    <p><strong>В игре, если вы входили через Apple или Google:</strong> <em>«Профиль» → «Удалить аккаунт»</em>. Игра
+      попросит войти ещё раз — это подтверждение, что удаляете вы. Затем она безвозвратно удалит:</p>
+    <ul>
+      <li>облачное сохранение;</li>
+      <li>результаты дня и недели за дни, которые помнит устройство, — примерно за последние два месяца;</li>
+      <li>строку в рейтинге;</li>
+      <li>аккаунт Firebase (ID учётной записи, почту, имя);</li>
+      <li>прогресс, ник, страну и фото на этом устройстве.</li>
+    </ul>
+    <p>Вход через Apple тоже будет отозван.</p>
+    <p><strong>В игре, если вы не входили:</strong> <em>«Профиль» → «Удалить мои данные»</em>. Игра удалит строку в
+      рейтинге, результаты дня и недели примерно за последние два месяца и номер игрока, а на устройстве начнётся сначала.</p>
+    <p>Если что-то пошло не так — например, нет интернета, — ничего не удаляется, и можно попробовать ещё раз. Удаление
+      игры с устройства не удаляет данные на наших серверах. Если вы играли без входа и переустановили игру, у неё новый
+      номер игрока, и данные под старым она удалить не может — напишите нам, и мы их удалим.</p>
+    <p><strong>По почте:</strong> напишите на <strong>support@vias.im</strong> с любого адреса. Укажите имя или номер
+      игрока из игры либо почту, с которой входили. Мы удалим данные в течение 30 дней и ответим, когда всё будет готово.</p>
+    <p><strong>Что остаётся после удаления:</strong></p>
+    <ul>
+      <li>результаты дня и недели, которые игра не может найти с устройства: старше примерно двух месяцев и записанные
+        под вашим прежним номером игрока — например, до переустановки игры или до входа в уже существующий аккаунт.
+        В каждой такой записи — ник, страна и номер «Игрок N», которые были у вас тогда, процент, очки и случайный номер
+        игрока. Сами они не удаляются. Напишите на <strong>support@vias.im</strong> имя или номер игрока — удалим
+        в течение 30 дней;</li>
+      <li>запись о покупке в RevenueCat — удалим, если попросите по почте. Свои записи о покупках Apple и Google хранят по своим правилам;</li>
+      <li>пустые технические записи, в которых есть только случайный номер игрока, без имени и очков. После удаления их нельзя связать с вами;</li>
+      <li>данные аналитики — они не связаны с аккаунтом и удаляются сами (<a href="#ru-retention">раздел 5</a>);</li>
+      <li>данные, которые собрал Google AdMob, — рекламный идентификатор можно сбросить в настройках устройства;</li>
+      <li>достижения и результаты в Game Center — ими управляет ваш аккаунт Apple.</li>
+    </ul>
+    <p>Если найдёте что-то ещё — напишите, и мы удалим.</p>
+
+    <h2 id="ru-children">7. Дети</h2>
+    <p>
+      Let's Scale рассчитана на широкую аудиторию и не предназначена для детей младше 13 лет (или минимального возраста
+      в вашей стране). Игра не спрашивает возраст. Реклама ограничена рейтингом «PG». Мы сознательно не собираем
+      персональные данные детей младше 13 лет. Если вы родитель или опекун и считаете, что ребёнок передал нам
+      персональные данные, напишите на support@vias.im или воспользуйтесь <em>«Профиль» → «Удалить аккаунт»</em> — мы их удалим.
+    </p>
+
+    <h2 id="ru-security">8. Безопасность</h2>
+    <p>
+      Игра передаёт все данные по зашифрованным соединениям (HTTPS/TLS). Правила безопасности Firestore дают читать
+      облачное сохранение только вам, и только вы можете менять или удалять свою строку в рейтинге и результаты.
+      Абсолютно защищённых систем не бывает, поэтому мы собираем только то, что нужно игре.
+    </p>
+
+    <h2 id="ru-transfers">9. Передача данных в другие страны</h2>
+    <p>
+      Cloud Firestore хранит рейтинги, результаты и облачные сохранения в Европейском союзе (регион Google «eur3»).
+      Firebase Authentication, Google Analytics, AdMob и RevenueCat могут обрабатывать данные в США и других странах.
+      Там, где этого требует закон, такая передача опирается на гарантии вроде стандартных договорных условий ЕС или
+      EU–US Data Privacy Framework.
+    </p>
+
+    <h2 id="ru-rights">10. Ваши права</h2>
+    <p>В зависимости от того, где вы живёте (например, по GDPR, UK GDPR или калифорнийскому CCPA), у вас есть право:</p>
+    <ul>
+      <li>узнать, какие данные у нас есть, и получить копию;</li>
+      <li>исправить их — ник и страну можно поменять в профиле в любой момент;</li>
+      <li>удалить их (<a href="#ru-delete">раздел 6</a>);</li>
+      <li>возразить против обработки или ограничить её;</li>
+      <li>отозвать согласие в любой момент (<a href="#ru-choices">раздел 4</a>) — это не отменяет обработку, которая была до отзыва;</li>
+      <li>отказаться от «продажи» или «передачи» данных для таргетированной рекламы (<a href="#ru-choices">раздел 4</a>);</li>
+      <li>не получить худшего отношения за то, что пользуетесь этими правами.</li>
+    </ul>
+    <p>
+      Чтобы воспользоваться правами, напишите на support@vias.im. Мы ответим в течение месяца. Чтобы убедиться, что
+      запрос ваш, можем попросить имя или номер игрока. Если вы живёте в ЕЭЗ или Великобритании, можно также пожаловаться
+      в местный орган по защите данных.
+    </p>
+
+    <h2 id="ru-changes">11. Изменения политики</h2>
+    <p>
+      Если мы изменим обработку данных, то обновим эту политику и дату «Обновлена» до того, как изменение появится в игре.
+      О серьёзных изменениях сообщим ещё и в игре или на странице в магазине.
+    </p>
+
+    <h2 id="ru-contact">12. Контакты</h2>
+    <p>Вопросы о политике и ваших данных:<br><strong>support@vias.im</strong></p>
+    <p class="meta">Политика написана на английском и русском. Если версии расходятся, действует <a href="#en" lang="en">английская</a>.</p>
+  </article>
+
+  <script>
+    // Переключатель языка. Без JavaScript обе версии идут подряд, ссылки ведут к нужной.
+    // Язык: по якорю (#ru, #ru-…) → иначе по языку браузера → иначе английский.
+    (function () {
+      var articles = { en: document.getElementById('en'), ru: document.getElementById('ru') };
+      var titles = { en: "Let's Scale — Privacy Policy", ru: "Let's Scale — Политика конфиденциальности" };
+      var links = document.querySelectorAll('.lang a[data-lang]');
+
+      function pick() {
+        var h = decodeURIComponent(location.hash.slice(1));
+        if (h === 'ru' || h.indexOf('ru-') === 0) return 'ru';
+        if (h) return 'en';
+        var l = (navigator.language || '').toLowerCase();
+        return l.indexOf('ru') === 0 ? 'ru' : 'en';
+      }
+
+      function show(lang) {
+        for (var k in articles) articles[k].hidden = (k !== lang);
+        for (var i = 0; i < links.length; i++)
+          links[i].setAttribute('aria-current', links[i].getAttribute('data-lang') === lang ? 'true' : 'false');
+        document.documentElement.lang = lang;
+        document.title = titles[lang];
+        var target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (target && target !== articles.en && target !== articles.ru) target.scrollIntoView();
+        else if (target) window.scrollTo(0, 0);
+      }
+
+      show(pick());
+      window.addEventListener('hashchange', function () { show(pick()); });
+    })();
+  </script>
 </body>
 </html>
