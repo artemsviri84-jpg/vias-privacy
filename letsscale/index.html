@@ -59,7 +59,7 @@
 
   <article id="en" lang="en">
     <h1>Privacy Policy for Let's Scale</h1>
-    <p class="meta">Effective date: October 11, 2026 &middot; Last updated: October 15, 2026</p>
+    <p class="meta">Effective date: October 11, 2026 &middot; Last updated: October 16, 2026</p>
 
     <p>
       <strong>Let's Scale</strong> is a mobile game made by <strong>Artem Svirinovskyi</strong> (“we”, “us”).
@@ -74,7 +74,7 @@
         <li>Other players see your nickname, country and scores in the leaderboards. The nickname and country are optional.</li>
         <li>Signing in with Apple or Google is optional. It keeps your progress in the cloud, so you can continue on another device.</li>
         <li>The game shows ads from Google AdMob. Personalised ads and your device's advertising identifier are used only with your permission.</li>
-        <li>“Remove ads” is an optional one-time purchase. The App Store or Google Play handles the payment; we never see your card details.</li>
+        <li>“Remove ads” and “Support the developer” are optional one-time purchases. The App Store or Google Play handles the payment; we never see your card details.</li>
         <li>We use Google Analytics for Firebase to see how the game is played. It doesn't receive your nickname, country or player ID.</li>
         <li>You can delete your data in the game: <em>Profile → Delete account</em> (or <em>Delete my data</em>, if you haven't signed in). <a href="#delete">How to delete</a></li>
         <li>We don't sell your personal data.</li>
@@ -88,7 +88,7 @@
       <tr><th>Data</th><th>When</th><th>Where it is stored</th><th>Why</th></tr>
       <tr><td>Random player ID (Firebase user ID)</td><td>On first launch</td><td>Google Firebase Authentication</td><td>To link your leaderboard entry, results and cloud save to you, and to block fake scores</td></tr>
       <tr><td>Total points and player number (“Player N”)</td><td>While you play</td><td>Google Cloud Firestore; visible to other players</td><td>Global and country leaderboards</td></tr>
-      <tr><td>Daily-set result (percent and points) and weekly total</td><td>After you finish the daily set</td><td>Cloud Firestore; visible to other players</td><td>Daily and weekly leaderboards</td></tr>
+      <tr><td>Daily challenge result (percent and points) and weekly total</td><td>After you finish the daily challenge</td><td>Cloud Firestore; visible to other players</td><td>Daily and weekly leaderboards</td></tr>
     </table></div>
 
     <h3>Added by you (optional)</h3>
@@ -104,20 +104,21 @@
     <ul>
       <li>your Apple or Google account ID;</li>
       <li>the email address that Apple or Google gives us. With Apple it can be a private “Hide My Email” address;</li>
-      <li>with Google sign-in, also the name and profile-picture link from your Google account. We don't show them to other players.</li>
+      <li>with Google sign-in on Android, also the name and profile-picture link from your Google account (on iPhone, Google gives us only your email). We don't show them to other players.</li>
     </ul>
     <p>If Apple shares your name on first sign-in, the game keeps it only on your device, to label your account in the profile.</p>
     <p>
       <strong>Cloud save.</strong> While you're signed in, the game saves your progress in Cloud Firestore: level results
-      and stars, collection cards, awards, daily-set history and streak, challenge records, and game settings (nickname,
-      country, units, language, colour, music). Only you can read your cloud save. If you sign out, the cloud save stays
+      and stars, collection cards, awards, daily challenge history and streak, mini-game records, the codes of your duels, your
+      height and silhouette choice, the supporter crown, and game settings (nickname, country, units, language, colour,
+      music). Only you can read your cloud save. If you sign out, the cloud save stays
       in your account. Without signing in, your progress stays only on your device.
     </p>
 
     <h3>Ads (Google AdMob)</h3>
     <p>
-      The game is free and shows ads from Google AdMob: a full-screen ad between levels and challenges (never during the
-      daily set) and optional rewarded videos that you choose to watch for an in-game bonus.
+      The game is free and shows ads from Google AdMob: a full-screen ad between levels and mini-games (never during the
+      daily challenge) and optional rewarded videos that you choose to watch for an in-game bonus.
     </p>
     <p>The AdMob software in the game sends data directly to Google:</p>
     <ul>
@@ -134,23 +135,29 @@
       <a href="#choices">Section 4</a> explains your choices.
     </p>
 
-    <h3>“Remove ads” purchase (RevenueCat)</h3>
+    <h3>Purchases: “Remove ads” and “Support the developer” (RevenueCat)</h3>
     <p>
       You can buy “Remove ads” once. It turns off full-screen ads; rewarded videos stay available if you want them. The
       App Store or Google Play handles the payment — we never see your card or payment details.
     </p>
     <p>
-      To confirm and restore the purchase, we use RevenueCat, Inc. The game sends RevenueCat your player ID. The store
+      “Support the developer” is an optional one-time purchase in several amounts, and you can make it more than once. It
+      doesn't unlock content or change the game. As a thank-you, a crown appears on your home screen and next to your
+      name in the leaderboard, where other players see it. You can hide it from the leaderboard with the “Crown in
+      leaderboard” switch in your profile.
+    </p>
+    <p>
+      To confirm and restore purchases, we use RevenueCat, Inc. The game sends RevenueCat your player ID. The store
       sends it the purchase details: product, date, price, currency and the country of your store account. We've turned
       off RevenueCat's automatic collection of device identifiers. If you sign in with the same Apple or Google account on
-      another device, your purchase comes with you.
+      another device, your purchases come with you.
     </p>
 
     <h3>Analytics (Google Analytics for Firebase)</h3>
     <p>
       To see which parts of the game work and which don't, the game sends Google Analytics for Firebase short reports
-      about play: which screens you open, which levels and challenges you start and finish, results in percent, settings
-      you change (for example, sound on or off), ads shown or watched, and the “Remove ads” purchase.
+      about play: which screens you open, which levels and mini-games you start and finish, results in percent, settings
+      you change (for example, sound on or off), ads shown or watched, and the “Remove ads” and “Support the developer” purchases.
     </p>
     <p>
       Firebase adds an app-instance ID it creates, device model, OS and app version, language, approximate location
@@ -185,7 +192,7 @@
       local time. No server is involved. You can turn them off in the game settings or in your device settings.
     </p>
     <p>
-      <strong>Duels.</strong> When you challenge a friend, the game stores the challenge in Cloud Firestore under a random 6-digit code: the set of pairs, your percent for each pair, the time and your player ID. Anyone signed in to the game who has the code can open it. When a friend accepts the challenge, their player ID, nickname and percent for each pair are added to it. The challenge is deleted once you've seen the result; if nobody accepts it, after 7 days; if it's accepted but you don't open the game, after 30 days. Deleting your account or your data in the profile also deletes the challenges your device remembers.
+      <strong>Duels.</strong> When you challenge a friend, the game stores the challenge in Cloud Firestore under a random 6-digit code: the set of pairs, your percent for each pair, the time and your player ID. Anyone signed in to the game who has the code can open it. When a friend accepts the challenge, their player ID, nickname and percent for each pair are added to it. The challenge is deleted once you've seen the result; if nobody accepts it, after 7 days; if it's accepted but you don't open the game, after 30 days. Deleting your account or your data in the profile also deletes the challenges your device or your cloud save remembers.
     </p>
 
     <h3>If you email us</h3>
@@ -217,7 +224,7 @@
         for Google's own purposes, as described in Google's policies:
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>,
         <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a>.</li>
-      <li><strong>RevenueCat, Inc.</strong> — confirms and restores the “Remove ads” purchase.
+      <li><strong>RevenueCat, Inc.</strong> — confirms and restores the “Remove ads” and “Support the developer” purchases.
         <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
       <li><strong>Apple</strong> — Sign in with Apple, App Store payments, Game Center and the tracking permission on iPhone.
         <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</li>
@@ -249,7 +256,7 @@
       <tr><th>Data</th><th>How long</th></tr>
       <tr><td>Player ID, leaderboard entry, daily and weekly results, cloud save</td><td>Until you delete them in the game or ask us to</td></tr>
       <tr><td>Account data from Apple or Google (account ID, email, name)</td><td>Until you delete your account</td></tr>
-      <tr><td>Purchase record at RevenueCat</td><td>As long as needed to restore your purchase and keep accounting records. We delete it on request.</td></tr>
+      <tr><td>Purchase records at RevenueCat</td><td>As long as needed to restore your purchases and keep accounting records. We delete it on request.</td></tr>
       <tr><td>Analytics data</td><td>Up to 14 months; then Google deletes it automatically</td></tr>
       <tr><td>Ad data at Google</td><td>Under Google's policies</td></tr>
       <tr><td>Your emails to us</td><td>Up to 12 months after we answer</td></tr>
@@ -263,7 +270,7 @@
     <ul>
       <li>your cloud save;</li>
       <li>your daily and weekly results for the days your device remembers — about the last two months;</li>
-      <li>your leaderboard entry;</li>
+      <li>your leaderboard entry, with the supporter crown;</li>
       <li>your Firebase account (account ID, email, name);</li>
       <li>your progress, nickname, country and photo on this device.</li>
     </ul>
@@ -283,7 +290,7 @@
         you already had. Each such entry keeps the nickname, country and “Player N” number you had then, the percent and
         points, and the random player ID. We don't delete them automatically. Write to <strong>support@vias.im</strong>
         with your player name or number, and we'll delete them within 30 days;</li>
-      <li>the purchase record at RevenueCat — we delete it if you ask by email. Apple and Google keep their own purchase records under their policies;</li>
+      <li>purchase records at RevenueCat — we delete them if you ask by email. Apple and Google keep their own purchase records under their policies;</li>
       <li>empty technical records that contain only the random player ID, without a name or score. After deletion they can't be linked to you;</li>
       <li>analytics data — it isn't linked to your account and is deleted automatically (<a href="#retention">section 5</a>);</li>
       <li>data that Google AdMob has collected — you can reset your advertising identifier in your device settings;</li>

@@ -59,7 +59,7 @@
 
   <article id="it" lang="it">
     <h1>Informativa sulla privacy di Let's Scale</h1>
-    <p class="meta">Data di entrata in vigore: 11 ottobre 2026 &middot; Ultimo aggiornamento: 15 ottobre 2026<br>
+    <p class="meta">Data di entrata in vigore: 11 ottobre 2026 &middot; Ultimo aggiornamento: 16 ottobre 2026<br>
       Traduzione fornita per comodità; in caso di discrepanze prevale la <a href="../" hreflang="en">versione inglese</a>.</p>
 
     <p>
@@ -75,7 +75,7 @@
         <li>Gli altri giocatori vedono nelle classifiche il tuo nickname, il tuo paese e i tuoi punti. Nickname e paese sono facoltativi.</li>
         <li>L'accesso con Apple o Google è facoltativo. Conserva i tuoi progressi nel cloud, così puoi continuare su un altro dispositivo.</li>
         <li>Il gioco mostra annunci di Google AdMob. Gli annunci personalizzati e l'identificativo pubblicitario del tuo dispositivo vengono usati solo con il tuo permesso.</li>
-        <li>«Togli pubblicità» è un acquisto facoltativo una tantum. Il pagamento è gestito da App Store o Google Play; non vediamo mai i dati della tua carta.</li>
+        <li>«Togli pubblicità» e «Sostieni lo sviluppatore» sono acquisti facoltativi una tantum. Il pagamento è gestito da App Store o Google Play; non vediamo mai i dati della tua carta.</li>
         <li>Usiamo Google Analytics for Firebase per capire come si gioca. Analytics non riceve il tuo nickname, il tuo paese né il tuo ID giocatore.</li>
         <li>Puoi eliminare i tuoi dati nel gioco: <em>Profilo → Elimina account</em> (oppure <em>Elimina i miei dati</em>, se non hai effettuato l'accesso). <a href="#delete">Come eliminarli</a></li>
         <li>Non vendiamo i tuoi dati personali.</li>
@@ -105,14 +105,15 @@
     <ul>
       <li>l'ID del tuo account Apple o Google;</li>
       <li>l'indirizzo email che ci fornisce Apple o Google. Con Apple può essere un indirizzo privato di «Nascondi la mia email»;</li>
-      <li>con l'accesso tramite Google, anche il nome e il link alla foto del profilo del tuo account Google. Non li mostriamo agli altri giocatori.</li>
+      <li>con l'accesso tramite Google su Android, anche il nome e il link alla foto del profilo del tuo account Google (su iPhone Google ci fornisce solo la tua email). Non li mostriamo agli altri giocatori.</li>
     </ul>
     <p>Se Apple condivide il tuo nome al primo accesso, il gioco lo conserva solo sul tuo dispositivo, per indicare il tuo account nel profilo.</p>
     <p>
       <strong>Salvataggio nel cloud.</strong> Finché hai effettuato l'accesso, il gioco salva i tuoi progressi in Cloud
       Firestore: risultati e stelle dei livelli, carte della collezione, premi, cronologia delle sfide del giorno e serie,
-      record dei minigiochi e impostazioni del gioco (nickname, paese, unità di misura, lingua, colore, musica). Solo tu puoi
-      leggere il tuo salvataggio nel cloud. Se esci dall'account, il salvataggio nel cloud resta nel tuo account. Senza
+      record dei minigiochi, i codici dei tuoi duelli, la tua altezza e la sagoma scelta, la corona da sostenitore e le
+      impostazioni del gioco (nickname, paese, unità di misura, lingua, colore, musica). Solo tu puoi leggere il tuo
+      salvataggio nel cloud. Se esci dall'account, il salvataggio nel cloud resta nel tuo account. Senza
       accesso, i tuoi progressi restano solo sul tuo dispositivo.
     </p>
 
@@ -136,25 +137,31 @@
       La <a href="#choices">sezione 4</a> spiega le tue scelte.
     </p>
 
-    <h3>Acquisto «Togli pubblicità» (RevenueCat)</h3>
+    <h3>Acquisti: «Togli pubblicità» e «Sostieni lo sviluppatore» (RevenueCat)</h3>
     <p>
       Puoi acquistare «Togli pubblicità» una sola volta. Disattiva gli annunci a schermo intero; i video con premio restano
       disponibili, se li vuoi. Il pagamento è gestito da App Store o Google Play: non vediamo mai i dati della tua carta o del
       pagamento.
     </p>
     <p>
-      Per confermare e ripristinare l'acquisto usiamo RevenueCat, Inc. Il gioco invia a RevenueCat il tuo ID giocatore. Lo
+      «Sostieni lo sviluppatore» è un acquisto facoltativo una tantum, con diversi importi a scelta, e puoi farlo più di una
+      volta. Non sblocca contenuti e non cambia il gioco. Come ringraziamento, compare una corona nella schermata home e
+      accanto al tuo nome in classifica, dove la vedono gli altri giocatori. Puoi nasconderla dalla classifica con
+      l'interruttore «Corona in classifica» nel tuo profilo.
+    </p>
+    <p>
+      Per confermare e ripristinare gli acquisti usiamo RevenueCat, Inc. Il gioco invia a RevenueCat il tuo ID giocatore. Lo
       store invia a RevenueCat i dettagli dell'acquisto: prodotto, data, prezzo, valuta e paese del tuo account dello store.
       Abbiamo disattivato la raccolta automatica degli identificativi del dispositivo da parte di RevenueCat. Se accedi con
-      lo stesso account Apple o Google su un altro dispositivo, il tuo acquisto ti segue.
+      lo stesso account Apple o Google su un altro dispositivo, i tuoi acquisti ti seguono.
     </p>
 
     <h3>Statistiche (Google Analytics for Firebase)</h3>
     <p>
       Per capire quali parti del gioco funzionano e quali no, il gioco invia a Google Analytics for Firebase brevi rapporti
       sulle partite: quali schermate apri, quali livelli e minigiochi inizi e completi, i risultati in percentuale, le
-      impostazioni che modifichi (ad esempio audio attivo o disattivato), gli annunci mostrati o guardati e l'acquisto «Togli
-      pubblicità».
+      impostazioni che modifichi (ad esempio audio attivo o disattivato), gli annunci mostrati o guardati e gli acquisti
+      «Togli pubblicità» e «Sostieni lo sviluppatore».
     </p>
     <p>
       Firebase aggiunge un ID istanza dell'app creato da Firebase stesso, il modello del dispositivo, la versione del sistema
@@ -191,7 +198,7 @@
       ora locale. Non è coinvolto alcun server. Puoi disattivarli nelle impostazioni del gioco o del dispositivo.
     </p>
     <p>
-      <strong>Duelli.</strong> Quando sfidi un amico, il gioco salva la sfida in Cloud Firestore con un codice casuale di 6 cifre: l'insieme delle coppie, la tua percentuale per ogni coppia, l'ora e il tuo ID giocatore. Qualsiasi giocatore che ha effettuato l'accesso al gioco e ha il codice può aprirla. Quando un amico accetta la sfida, vengono aggiunti il suo ID giocatore, il suo nickname e la sua percentuale per ogni coppia. La sfida viene eliminata appena vedi il risultato; se nessuno la accetta, dopo 7 giorni; se viene accettata ma non apri il gioco, dopo 30 giorni. Eliminando l'account o i dati nel profilo vengono eliminate anche le sfide che il tuo dispositivo ricorda.
+      <strong>Duelli.</strong> Quando sfidi un amico, il gioco salva la sfida in Cloud Firestore con un codice casuale di 6 cifre: l'insieme delle coppie, la tua percentuale per ogni coppia, l'ora e il tuo ID giocatore. Qualsiasi giocatore che ha effettuato l'accesso al gioco e ha il codice può aprirla. Quando un amico accetta la sfida, vengono aggiunti il suo ID giocatore, il suo nickname e la sua percentuale per ogni coppia. La sfida viene eliminata appena vedi il risultato; se nessuno la accetta, dopo 7 giorni; se viene accettata ma non apri il gioco, dopo 30 giorni. Eliminando l'account o i dati nel profilo vengono eliminate anche le sfide che il tuo dispositivo o il tuo salvataggio nel cloud ricordano.
     </p>
 
     <h3>Se ci scrivi un'email</h3>
@@ -206,7 +213,7 @@
     <h2 id="use">2. Perché usiamo i dati e su quale base giuridica</h2>
     <div class="table-wrap"><table>
       <tr><th>Finalità</th><th>Dati</th><th>Base giuridica (SEE e Regno Unito)</th></tr>
-      <tr><td>Far funzionare il gioco: classifiche, risultati giornalieri e settimanali, account, salvataggio nel cloud, ripristino dell'acquisto</td><td>ID giocatore, nickname, paese, punti, risultati, ID ed email dell'account, salvataggio nel cloud, dettagli dell'acquisto</td><td>Esecuzione di un contratto: fornirti il gioco che hai richiesto</td></tr>
+      <tr><td>Far funzionare il gioco: classifiche, risultati giornalieri e settimanali, account, salvataggio nel cloud, ripristino degli acquisti</td><td>ID giocatore, nickname, paese, punti, risultati, ID ed email dell'account, salvataggio nel cloud, dettagli degli acquisti</td><td>Esecuzione di un contratto: fornirti il gioco che hai richiesto</td></tr>
       <tr><td>Gioco leale e sicurezza: bloccare punteggi falsi e abusi</td><td>ID giocatore, punti, orario di ogni aggiornamento</td><td>Legittimo interesse</td></tr>
       <tr><td>Annunci personalizzati</td><td>Identificativo pubblicitario, dati sugli annunci, posizione approssimativa</td><td>Il tuo consenso</td></tr>
       <tr><td>Annunci non personalizzati che mantengono il gioco gratuito</td><td>Dati sugli annunci, posizione approssimativa, informazioni sul dispositivo</td><td>Legittimo interesse, nei limiti delle scelte fatte nel modulo di consenso</td></tr>
@@ -223,7 +230,7 @@
         usa i dati anche per finalità proprie di Google, come descritto nelle norme di Google:
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Norme sulla privacy di Google</a>,
         <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a>.</li>
-      <li><strong>RevenueCat, Inc.</strong>: conferma e ripristina l'acquisto «Togli pubblicità».
+      <li><strong>RevenueCat, Inc.</strong>: conferma e ripristina gli acquisti «Togli pubblicità» e «Sostieni lo sviluppatore».
         <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Informativa sulla privacy di RevenueCat</a>.</li>
       <li><strong>Apple</strong>: accesso con Apple, pagamenti su App Store, Game Center e autorizzazione al tracciamento su iPhone.
         <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Informativa sulla privacy di Apple</a>.</li>
@@ -257,7 +264,7 @@
       <tr><th>Dati</th><th>Per quanto tempo</th></tr>
       <tr><td>ID giocatore, voce in classifica, risultati giornalieri e settimanali, salvataggio nel cloud</td><td>Finché non li elimini nel gioco o non ci chiedi di farlo</td></tr>
       <tr><td>Dati dell'account Apple o Google (ID dell'account, email, nome)</td><td>Finché non elimini il tuo account</td></tr>
-      <tr><td>Registrazione dell'acquisto presso RevenueCat</td><td>Per il tempo necessario a ripristinare il tuo acquisto e a tenere la contabilità. La eliminiamo su richiesta.</td></tr>
+      <tr><td>Registrazioni degli acquisti presso RevenueCat</td><td>Per il tempo necessario a ripristinare i tuoi acquisti e a tenere la contabilità. Le eliminiamo su richiesta.</td></tr>
       <tr><td>Dati statistici</td><td>Fino a 14 mesi; poi Google li elimina automaticamente</td></tr>
       <tr><td>Dati pubblicitari presso Google</td><td>Secondo le norme di Google</td></tr>
       <tr><td>Le email che ci invii</td><td>Fino a 12 mesi dopo la nostra risposta</td></tr>
@@ -271,7 +278,7 @@
     <ul>
       <li>il tuo salvataggio nel cloud;</li>
       <li>i tuoi risultati giornalieri e settimanali dei giorni che il tuo dispositivo ricorda, all'incirca gli ultimi due mesi;</li>
-      <li>la tua voce in classifica;</li>
+      <li>la tua voce in classifica, con la corona da sostenitore;</li>
       <li>il tuo account Firebase (ID dell'account, email, nome);</li>
       <li>i tuoi progressi, il nickname, il paese e la foto su questo dispositivo.</li>
     </ul>
@@ -293,7 +300,7 @@
         accedessi a un account che avevi già. Ciascuna di queste voci conserva il nickname, il paese e il numero «Giocatore N»
         che avevi allora, la percentuale e i punti, e l'ID giocatore casuale. Non le eliminiamo automaticamente. Scrivi a
         <strong>support@vias.im</strong> indicando il tuo nome o numero di giocatore e le elimineremo entro 30 giorni;</li>
-      <li>la registrazione dell'acquisto presso RevenueCat: la eliminiamo se ce lo chiedi via email. Apple e Google
+      <li>le registrazioni degli acquisti presso RevenueCat: le eliminiamo se ce lo chiedi via email. Apple e Google
         conservano le proprie registrazioni degli acquisti secondo le loro norme;</li>
       <li>record tecnici vuoti che contengono solo l'ID giocatore casuale, senza nome né punteggio. Dopo l'eliminazione non
         possono essere collegati a te;</li>
