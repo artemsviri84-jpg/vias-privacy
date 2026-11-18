@@ -1,0 +1,739 @@
+<!-- vias.im/tech — language auto-detect (EN / RU / HE). Tilda T123 block, last on the page. Built by build_lang.py -->
+<style>
+html.vl-wait #allrecords{opacity:0}
+#allrecords{transition:opacity .15s}
+#vl-switch{position:fixed;right:16px;bottom:16px;z-index:9999;display:flex;gap:2px;padding:3px;background:#fff;border:1px solid #1f5bff;border-radius:20px;font:600 12px/1 Arial,sans-serif;direction:ltr;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+#vl-switch button{all:unset;cursor:pointer;padding:7px 10px;border-radius:16px;color:#1f5bff;letter-spacing:.5px}
+#vl-switch button.on{background:#1f5bff;color:#fff}
+.vl-off{display:none!important}
+html.vl-rtl .t-rec:not([data-record-type="1272"]) :is(.t-title,.t-name,.t-descr,.t-text,.t-uptitle,.t-heading,.t585__text,.t1148__descr,.t1148__caption){direction:rtl}
+html.vl-rtl .t-rec:not([data-record-type="1272"]) .t-align_left,html.vl-rtl .vl-r{text-align:right!important}
+</style>
+<script>
+(function () {
+  var SUP = ['en', 'ru', 'he'];
+  var LABEL = { en: 'EN', ru: 'RU', he: 'עב' };
+  var NAME = { en: 'English', ru: 'Русский', he: 'עברית' };
+  var IDX = { ru: 0, he: 1 };
+  // English text on the page -> [Russian, Hebrew]. To change a text: edit it in translations.py and rebuild,
+  // or edit it here. A block whose English text is changed in Tilda simply stays English until the key is updated.
+  var T = {
+"Technical portfolio": [
+"Техническое портфолио",
+"תיק עבודות טכני"
+],
+"Games": [
+"Игры",
+"משחקים"
+],
+"Tools": [
+"Инструменты",
+"כלים"
+],
+"AI workflow": [
+"Работа с ИИ",
+"עבודה עם AI"
+],
+"Architecture portfolio": [
+"Портфолио архитектуры",
+"תיק עבודות אדריכלות"
+],
+"Contacts": [
+"Контакты",
+"צור קשר"
+],
+"CV": [
+"Резюме",
+"קורות חיים"
+],
+"I’m an architect. Recently, with AI tools, I’ve built two mobile games, Grasshopper scripts for 3D printing and CNC, and a few small tools for my work.": [
+"Я архитектор. В последнее время с помощью ИИ-инструментов я сделал две мобильные игры, скрипты в Grasshopper для 3D-печати и ЧПУ и несколько небольших инструментов для работы.",
+"אני אדריכל. בתקופה האחרונה, בעזרת כלי AI, בניתי שני משחקי מובייל, סקריפטים ב-Grasshopper להדפסת תלת-ממד ול-CNC, וכמה כלים קטנים לעבודה שלי."
+],
+"My games": [
+"Мои игры",
+"המשחקים שלי"
+],
+"Grasshopper & fabrication": [
+"Grasshopper и производство",
+"Grasshopper וייצור"
+],
+"Tools & automation": [
+"Инструменты и автоматизация",
+"כלים ואוטומציה"
+],
+"Mobile game": [
+"Мобильная игра",
+"משחק מובייל"
+],
+"How long is a pirate ship next to a car? How big is Jupiter next to Earth? Two silhouettes, one with a known size: resize the other until it looks right and see how close you got.": [
+"Насколько пиратский корабль длиннее машины? Во сколько раз Юпитер больше Земли? Два силуэта, у одного размер известен: подбери размер второго и посмотри, насколько точно угадал.",
+"כמה ארוכה ספינת פיראטים לעומת מכונית? פי כמה צדק גדול מכדור הארץ? שני צלליות, לאחת הגודל ידוע: התאימו את השנייה עד שתיראה נכון ובדקו כמה קרוב הגעתם."
+],
+"Show more": [
+"Подробнее",
+"עוד פרטים"
+],
+"The idea": [
+"Идея",
+"הרעיון"
+],
+"A game about a sense of scale — the thing an architect trains every day. Accuracy is measured in proportions, not metres: being off by half costs the same for a mouse and for a whale.": [
+"Игра про чувство масштаба — то, что архитектор тренирует каждый день. Точность считается в пропорциях, а не в метрах: ошибка вдвое стоит одинаково и для мыши, и для кита.",
+"משחק על תחושת קנה מידה — הדבר שאדריכל מתרגל כל יום. הדיוק נמדד בפרופורציות ולא במטרים: טעות של פי שניים עולה אותו דבר לעכבר וללווייתן."
+],
+"My role": [
+"Моя роль",
+"התפקיד שלי"
+],
+"Concept, game design, visual design and releases on both stores. My second game, on a different engine: the same way of working moved from a web stack to Unity.": [
+"Концепция, геймдизайн, визуал и релизы в обоих сторах. Моя вторая игра на другом движке: тот же подход к работе перешёл с веб-стека на Unity.",
+"קונספט, עיצוב משחק, עיצוב חזותי והשקה בשתי החנויות. המשחק השני שלי, על מנוע אחר: אותה שיטת עבודה עברה מטכנולוגיית ווב ל-Unity."
+],
+"What’s inside": [
+"Что внутри",
+"מה יש בפנים"
+],
+"• Worlds: animals, countries and islands, space, transport, architecture": [
+"• Миры: животные, страны и острова, космос, транспорт, архитектура",
+"• עולמות: בעלי חיים, מדינות ואיים, חלל, תחבורה, אדריכלות"
+],
+"• Daily challenge: five new pairs a day, the same for every player, with streaks": [
+"• Дневное испытание: пять новых пар в день, одни для всех, с сериями",
+"• אתגר יומי: חמישה זוגות חדשים בכל יום, אותם זוגות לכולם, עם רצפים"
+],
+"• Four mini-games, including a duel with a friend by code": [
+"• Четыре мини-игры, включая дуэль с другом по коду",
+"• ארבעה מיני-משחקים, כולל דו-קרב עם חבר באמצעות קוד"
+],
+"• A collection: objects become copper, silver, gold or platinum cards": [
+"• Коллекция: объекты становятся медными, серебряными, золотыми или платиновыми карточками",
+"• אוסף: הפריטים הופכים לקלפי נחושת, כסף, זהב או פלטינה"
+],
+"• World and country leaderboards, Game Center": [
+"• Мировой рейтинг и рейтинг страны, Game Center",
+"• טבלאות מובילים עולמית ולפי מדינה, Game Center"
+],
+"How I work on it": [
+"Как я над ней работаю",
+"איך אני עובד עליו"
+],
+"• A decision hub: AI prepares questions, options and reports, and every decision — colours, cards, icons, sounds, texts — is made there, not in a chat. More in “Decision hub” in the AI workflow section": [
+"• Хаб решений: ИИ готовит вопросы, варианты и отчёты, и каждое решение — цвета, карточки, иконки, звуки, тексты — принимается там, а не в чате. Подробнее — в «Хабе решений» в разделе «Работа с ИИ»",
+"• מרכז החלטות: ה-AI מכין שאלות, אפשרויות ודוחות, וכל החלטה — צבעים, קלפים, אייקונים, צלילים, טקסטים — מתקבלת שם ולא בצ'אט. פרטים ב„מרכז החלטות” בפרק „עבודה עם AI”"
+],
+"• Hundreds of silhouettes made in a vector pipeline with AI and checked by hand": [
+"• Сотни силуэтов, сделанных в векторном конвейере с ИИ и проверенных вручную",
+"• מאות צלליות שנוצרו בתהליך וקטורי עם AI ונבדקו ידנית"
+],
+"• Store pages and texts in 10 languages": [
+"• Страницы в сторах и тексты на 10 языках",
+"• דפי חנות וטקסטים ב-10 שפות"
+],
+"Built for retention and curiosity": [
+"Сделано для удержания и интереса",
+"נבנה לשימור ולסקרנות"
+],
+"After Frog Loop, I designed this game from day one around reasons to come back and reasons to care:": [
+"После Frog Loop я с первого дня строил эту игру вокруг причин вернуться и причин увлечься:",
+"אחרי Frog Loop תכננתי את המשחק הזה מהיום הראשון סביב סיבות לחזור וסיבות להתעניין:"
+],
+"• A daily challenge with streaks and a weekly streak freeze": [
+"• Дневное испытание с сериями и еженедельной заморозкой серии",
+"• אתגר יומי עם רצפים והקפאת רצף שבועית"
+],
+"• Reminders and a detailed onboarding": [
+"• Напоминания и подробное обучение",
+"• תזכורות והדרכה מפורטת"
+],
+"• A collection to complete and titles that grow with accuracy": [
+"• Коллекция, которую хочется собрать, и звания, которые растут с точностью",
+"• אוסף להשלים ודרגות שעולות עם הדיוק"
+],
+"• Something to learn: every animal, country and building comes with a short fact": [
+"• Что-то новое: у каждого животного, страны и здания есть короткий факт",
+"• משהו ללמוד: לכל חיה, מדינה ומבנה יש עובדה קצרה"
+],
+"Stack": [
+"Стек",
+"טכנולוגיות"
+],
+"Let’s Scale: levels, worlds, mini-games, collection": [
+"Let’s Scale: уровни, миры, мини-игры, коллекция",
+"Let’s Scale: שלבים, עולמות, מיני-משחקים, אוסף"
+],
+"A memory and mental-math game. A frog climbs an invisible minefield; the mines never move, so every mistake shows a bit more of the safe path. Designed, built and published solo, with AI writing the code.": [
+"Игра на память и счёт в уме. Лягушка поднимается по невидимому минному полю; мины не двигаются, поэтому каждая ошибка открывает ещё кусочек безопасного пути. Придумал, сделал и выпустил сам, код писал ИИ.",
+"משחק זיכרון וחשבון בראש. צפרדע מטפסת בשדה מוקשים בלתי נראה; המוקשים לא זזים, ולכן כל טעות חושפת עוד קצת מהדרך הבטוחה. תכננתי, בניתי ופרסמתי לבד, וה-AI כתב את הקוד."
+],
+"A short-session game that trains memory instead of testing luck. The field never changes, so the player literally learns the way up. In the math worlds every row is a problem, and the right answer is the safe cell.": [
+"Короткая игра, которая тренирует память, а не проверяет удачу. Поле не меняется, поэтому игрок буквально запоминает путь наверх. В математических мирах каждый ряд — задача, и правильный ответ — безопасная клетка.",
+"משחק קצר שמאמן זיכרון במקום לבדוק מזל. השדה לא משתנה, ולכן השחקן ממש לומד את הדרך למעלה. בעולמות המתמטיקה כל שורה היא תרגיל, והתשובה הנכונה היא המשבצת הבטוחה."
+],
+"Everything except typing the code: game and UX design, art direction, product decisions, testing on real devices, store listings and releases. I set tasks for Claude Code, checked the result on the device and iterated.": [
+"Всё, кроме набора кода: геймдизайн и UX, арт-дирекшн, продуктовые решения, тесты на реальных устройствах, страницы в сторах и релизы. Я ставил задачи Claude Code, проверял результат на телефоне и дорабатывал.",
+"הכול חוץ מהקלדת הקוד: עיצוב משחק ו-UX, הכוונה אמנותית, החלטות מוצר, בדיקות על מכשירים אמיתיים, דפי חנות והשקות. הגדרתי משימות ל-Claude Code, בדקתי את התוצאה במכשיר ושיפרתי."
+],
+"• 395 levels plus endless modes": [
+"• 395 уровней и бесконечные режимы",
+"• 395 שלבים ומצבים אינסופיים"
+],
+"• Math worlds: multiplication, digit sums, powers, Fibonacci, primes, digits of π": [
+"• Математические миры: умножение, суммы цифр, степени, Фибоначчи, простые числа, цифры π",
+"• עולמות מתמטיקה: כפל, סכום ספרות, חזקות, פיבונאצ'י, מספרים ראשוניים, ספרות π"
+],
+"• Custom levels from any word, date or number — a way to memorise a phone number or a PIN": [
+"• Свои уровни из любого слова, даты или числа — способ запомнить телефон или пин-код",
+"• שלבים משלך מכל מילה, תאריך או מספר — דרך לזכור מספר טלפון או קוד"
+],
+"• Daily challenge, skins and accessories, world and country leaderboards": [
+"• Дневное испытание, скины и аксессуары, мировой рейтинг и рейтинг страны",
+"• אתגר יומי, סקינים ואביזרים, טבלאות מובילים עולמית ולפי מדינה"
+],
+"• 9 languages, offline play, cloud saves with Apple or Google sign-in": [
+"• 9 языков, игра без интернета, облачные сохранения через Apple или Google",
+"• 9 שפות, משחק בלי אינטרנט, שמירה בענן דרך Apple או Google"
+],
+"How it’s built": [
+"Как устроена",
+"איך זה בנוי"
+],
+"• One web codebase (Phaser 3) packaged for iOS and Android with Capacitor": [
+"• Один веб-код (Phaser 3), собранный под iOS и Android через Capacitor",
+"• קוד ווב אחד (Phaser 3) שנארז ל-iOS ול-Android עם Capacitor"
+],
+"• Firebase for sign-in, cloud saves and leaderboards": [
+"• Firebase для входа, облачных сохранений и рейтинга",
+"• Firebase להתחברות, שמירה בענן וטבלאות מובילים"
+],
+"• AdMob and RevenueCat for ads and the one-time purchase": [
+"• AdMob и RevenueCat для рекламы и разовой покупки",
+"• AdMob ו-RevenueCat לפרסומות ולרכישה חד-פעמית"
+],
+"• A token-based design system for all 29 popups and my own dev tools to tune them live": [
+"• Дизайн-система на токенах для всех 29 всплывающих окон и мои дев-инструменты для их живой настройки",
+"• מערכת עיצוב מבוססת טוקנים לכל 29 החלונות הקופצים, וכלי פיתוח שלי לכוונון שלהם בזמן אמת"
+],
+"• Google Analytics 4: I read the funnel and plan updates from it": [
+"• Google Analytics 4: я смотрю воронку и планирую обновления по ней",
+"• Google Analytics 4: אני קורא את המשפך ומתכנן עדכונים לפיו"
+],
+"What I learned": [
+"Чему я научился",
+"מה למדתי"
+],
+"Google Analytics 4 showed where players leave: the early levels were too punishing, and the game gave few reasons to come back the next day. Those lessons shaped my second game.": [
+"Google Analytics 4 показала, где игроки уходят: первые уровни были слишком жёсткими, а причин вернуться на следующий день было мало. Эти выводы легли в основу моей второй игры.",
+"Google Analytics 4 הראה איפה שחקנים עוזבים: השלבים הראשונים היו קשים מדי, והיו מעט סיבות לחזור למחרת. הלקחים האלה עיצבו את המשחק השני שלי."
+],
+"Frog Loop: gameplay, worlds, skins, leaderboard": [
+"Frog Loop: игровой процесс, миры, скины, рейтинг",
+"Frog Loop: משחקיות, עולמות, סקינים, טבלת מובילים"
+],
+"Vase-mode slicer with loops": [
+"Слайсер для спиральных ваз с петельками",
+"סלייסר לאגרטלים ספירליים עם לולאות"
+],
+"3D printing · G-code": [
+"3D-печать · G-код",
+"הדפסת תלת-ממד · G-code"
+],
+"My own slicer for spiral vases and lamp shades: it builds one continuous toolpath, adds loops along the line and writes ready G-code for the printer.": [
+"Мой собственный слайсер для спиральных ваз и абажуров: строит одну непрерывную траекторию, добавляет петельки вдоль линии и пишет готовый G-код для принтера.",
+"סלייסר משלי לאגרטלים ספירליים ולאהילים: בונה מסלול רציף אחד, מוסיף לולאות לאורך הקו וכותב G-code מוכן למדפסת."
+],
+"The task": [
+"Задача",
+"המשימה"
+],
+"Standard slicers print a vase as a smooth wall. I wanted a shade with a looped, textured surface that lets light through — no slicer does that out of the box.": [
+"Обычные слайсеры печатают вазу гладкой стенкой. Я хотел абажур с петельчатой фактурной поверхностью, которая пропускает свет, — ни один слайсер так не умеет из коробки.",
+"סלייסרים רגילים מדפיסים אגרטל כקיר חלק. רציתי אהיל עם משטח מרקמי של לולאות שמעביר אור — אף סלייסר לא עושה את זה מהקופסה."
+],
+"What the script does": [
+"Что делает скрипт",
+"מה הסקריפט עושה"
+],
+"• Builds a continuous spiral toolpath from the model: turns, height, layer height, path width, number of points, start and end radius": [
+"• Строит непрерывную спиральную траекторию по модели: витки, высота, высота слоя, ширина линии, число точек, начальный и конечный радиус",
+"• בונה מסלול ספירלי רציף לפי המודל: סיבובים, גובה, גובה שכבה, רוחב קו, מספר נקודות, רדיוס התחלה וסוף"
+],
+"• Prints a flat spiral bottom with its own settings": [
+"• Печатает плоское спиральное дно со своими настройками",
+"• מדפיס תחתית ספירלית שטוחה עם הגדרות משלה"
+],
+"• Moves chosen points of the path out of the contour to form loops: how many, how far, in which direction, with offsets and triggers": [
+"• Выводит выбранные точки траектории за контур, образуя петельки: сколько, насколько далеко, в какую сторону, со сдвигами и триггерами",
+"• מוציא נקודות נבחרות מהמסלול אל מחוץ לקו המתאר ויוצר לולאות: כמה, כמה רחוק, לאיזה כיוון, עם הסטות וטריגרים"
+],
+"• Converts the path into G-code and calculates the extrusion for every move": [
+"• Переводит траекторию в G-код и считает экструзию для каждого движения",
+"• ממיר את המסלול ל-G-code ומחשב את השחול לכל תנועה"
+],
+"What comes out": [
+"Что на выходе",
+"מה מתקבל"
+],
+"A G-code file ready for the printer, plus the length and weight of filament the print will need. Every parameter is a slider, so a new shade is a few changes away.": [
+"Готовый для принтера G-код плюс длина и вес пластика, которые нужны на печать. Каждый параметр — ползунок, так что новый абажур — это несколько изменений.",
+"קובץ G-code מוכן למדפסת, וגם האורך והמשקל של הפילמנט שההדפסה תצטרך. כל פרמטר הוא מחוון, כך שאהיל חדש נמצא במרחק כמה שינויים."
+],
+"Tel Aviv puzzle": [
+"Пазл Тель-Авива",
+"פאזל תל אביב"
+],
+"Parametric puzzle cutting": [
+"Параметрическая нарезка пазла",
+"חיתוך פאזל פרמטרי"
+],
+"A jigsaw puzzle of Tel Aviv. My Grasshopper script splits the image into interlocking pieces with tabs and outputs the cutting lines.": [
+"Пазл с Тель-Авивом. Мой скрипт в Grasshopper делит изображение на сцепляющиеся детали с ушками и выдаёт линии реза.",
+"פאזל של תל אביב. הסקריפט שלי ב-Grasshopper מחלק את התמונה לחלקים משתלבים עם לשוניות ומפיק את קווי החיתוך."
+],
+"It builds a grid of pieces over the image, then turns every shared edge into a joint with a tab. The direction of each tab is chosen at random from a seed, so the pieces don’t repeat and only fit in one place.": [
+"Он строит сетку деталей поверх изображения и превращает каждую общую грань в замок с ушком. Направление каждого ушка выбирается случайно по сиду, поэтому детали не повторяются и встают только на своё место.",
+"הוא בונה רשת של חלקים מעל התמונה והופך כל צלע משותפת לחיבור עם לשונית. הכיוון של כל לשונית נבחר באקראי לפי seed, כך שהחלקים לא חוזרים על עצמם ומתאימים רק למקום אחד."
+],
+"What can be tuned": [
+"Что можно настроить",
+"מה אפשר לכוונן"
+],
+"• Piece size, grid rotation and how far it extends": [
+"• Размер детали, поворот сетки и её охват",
+"• גודל החלק, סיבוב הרשת וכמה רחוק היא נמשכת"
+],
+"• Tab depth, width of the contact and corner radius": [
+"• Глубина ушка, ширина прилегания и радиус скругления",
+"• עומק הלשונית, רוחב המגע ורדיוס הפינה"
+],
+"• Where the tab sits on the edge and how much it shifts": [
+"• Где ушко стоит на грани и насколько смещается",
+"• איפה הלשונית יושבת על הצלע וכמה היא זזה"
+],
+"• Number of points on the curve and the random seed": [
+"• Число точек на кривой и случайный сид",
+"• מספר הנקודות על העקומה וה-seed האקראי"
+],
+"Result": [
+"Результат",
+"התוצאה"
+],
+"Ready cutting lines for the whole puzzle. Change a slider, and the whole layout is regenerated.": [
+"Готовые линии реза для всего пазла. Сдвинул ползунок — и вся раскладка пересобирается.",
+"קווי חיתוך מוכנים לכל הפאזל. מזיזים מחוון — וכל הפריסה נבנית מחדש."
+],
+"Logo made from coffee capsules": [
+"Логотип из кофейных капсул",
+"לוגו מקפסולות קפה"
+],
+"Tel Aviv": [
+"Тель-Авив",
+"תל אביב"
+],
+"Elifelet 29": [
+"Элифелет 29",
+"אליפלט 29"
+],
+"Screenshot from Rhino and Grasshopper, showing how the script takes an image, divides it into pixels, and adds the number corresponding to each color.": [
+"Скриншот из Rhino и Grasshopper: скрипт берёт изображение, делит его на пиксели и ставит номер, соответствующий каждому цвету.",
+"צילום מסך מ-Rhino ו-Grasshopper: הסקריפט לוקח תמונה, מחלק אותה לפיקסלים ומוסיף את המספר המתאים לכל צבע."
+],
+"Lamps": [
+"Светильники",
+"מנורות"
+],
+"Apartment hunt map": [
+"Карта для поиска квартиры",
+"מפה לחיפוש דירה"
+],
+"Personal tool": [
+"Личный инструмент",
+"כלי אישי"
+],
+"I send a link to a listing; AI reads it and fills a row in a Google Sheet, and the apartment appears on a map with tram and train lines, walking times and everything we need to decide.": [
+"Я присылаю ссылку на объявление; ИИ читает его и заполняет строку в Google-таблице, а квартира появляется на карте с линиями трамвая и поезда, временем пешком и всем, что нужно для решения.",
+"אני שולח קישור למודעה; ה-AI קורא אותה וממלא שורה בגיליון Google, והדירה מופיעה על מפה עם קווי הרכבת הקלה והרכבת, זמני הליכה וכל מה שצריך כדי להחליט."
+],
+"How it works": [
+"Как это работает",
+"איך זה עובד"
+],
+"• A listing link (Yad2, Facebook, a screenshot from a chat) becomes a row: rent, monthly costs, rooms, floor, shelter, parking, contact": [
+"• Ссылка на объявление (Yad2, Facebook, скриншот из чата) превращается в строку: аренда, расходы в месяц, комнаты, этаж, убежище, парковка, контакт",
+"• קישור למודעה (יד2, פייסבוק, צילום מסך מצ'אט) הופך לשורה: שכירות, הוצאות חודשיות, חדרים, קומה, ממ\"ד, חניה, איש קשר"
+],
+"• The sheet is the only source; the map reads it and writes statuses back": [
+"• Таблица — единственный источник: карта читает её и записывает статусы обратно",
+"• הגיליון הוא המקור היחיד: המפה קוראת ממנו וכותבת אליו סטטוסים"
+],
+"• Tram and train lines with walking time to the nearest station along real streets": [
+"• Линии трамвая и поезда со временем пешком до ближайшей станции по реальным улицам",
+"• קווי רכבת קלה ורכבת עם זמן הליכה לתחנה הקרובה לאורך רחובות אמיתיים"
+],
+"One card per apartment": [
+"Карточка каждой квартиры",
+"כרטיס לכל דירה"
+],
+"• A status shared with my partner: new, waiting for reply, viewing booked, viewed, good fit": [
+"• Общий с партнёршей статус: новая, ждём ответ, назначен просмотр, посмотрели, подходит",
+"• סטטוס משותף עם בת הזוג: חדשה, מחכים לתשובה, נקבע ביקור, ראינו, מתאימה"
+],
+"• Book a viewing: it lands in both our Google Calendars with reminders": [
+"• Запись на просмотр: попадает в оба наших Google-календаря с напоминаниями",
+"• קביעת ביקור: נכנסת לשני יומני Google שלנו עם תזכורות"
+],
+"• A ready first message to the owner, sent to WhatsApp in one click": [
+"• Готовое первое сообщение хозяину — в WhatsApp одним нажатием",
+"• הודעה ראשונה מוכנה לבעל הדירה — ל-WhatsApp בלחיצה אחת"
+],
+"• Links to the listing and Google Maps": [
+"• Ссылки на объявление и Google Maps",
+"• קישורים למודעה ול-Google Maps"
+],
+"One apartment open: status, costs, transport, viewing booking and a ready WhatsApp message": [
+"Открыта одна квартира: статус, расходы, транспорт, запись на просмотр и готовое сообщение в WhatsApp",
+"דירה אחת פתוחה: סטטוס, הוצאות, תחבורה, קביעת ביקור והודעת WhatsApp מוכנה"
+],
+"Plugins for Illustrator": [
+"Плагины для Illustrator",
+"תוספים ל-Illustrator"
+],
+"Studio workflow": [
+"Для работы в студии",
+"לעבודה בסטודיו"
+],
+"Built with AI": [
+"Сделано с ИИ",
+"נבנה עם AI"
+],
+"Small tools for routine tasks in my work: live area of shapes for quick material estimates and automatic numbering of text blocks by a template.": [
+"Небольшие инструменты для рутинных задач в работе: площадь фигур в реальном времени для быстрой прикидки материалов и автонумерация текстовых блоков по шаблону.",
+"כלים קטנים למשימות שגרתיות בעבודה: שטח של צורות בזמן אמת להערכת חומרים מהירה ומספור אוטומטי של תיבות טקסט לפי תבנית."
+],
+"Area and bounding box": [
+"Площадь и габариты",
+"שטח ומידות"
+],
+"• Shows the area, width and height of the selection and updates with every click": [
+"• Показывает площадь, ширину и высоту выделения и обновляется при каждом клике",
+"• מציג שטח, רוחב וגובה של הבחירה ומתעדכן בכל לחיצה"
+],
+"• Select several shapes and it adds up their areas": [
+"• Выделяешь несколько фигур — складывает их площади",
+"• בוחרים כמה צורות — והוא מחבר את השטחים"
+],
+"• Units of your choice and geometric or visual bounds": [
+"• Любые единицы, геометрические или видимые габариты",
+"• יחידות לבחירה וגבולות גאומטריים או חזותיים"
+],
+"• Made for rough material estimates and a feel for real sizes": [
+"• Для примерного подсчёта материалов и ощущения реальных размеров",
+"• להערכת חומרים גסה ולתחושה של גדלים אמיתיים"
+],
+"Auto numbering": [
+"Автонумерация",
+"מספור אוטומטי"
+],
+"Renumbers text blocks by a template. You type the format once in the first block — with leading zeros, prefixes and any extra symbols, like “001 A” — select all the blocks and run the script: each one gets the next number in the same format. Handy for drawings, sheets and plans.": [
+"Нумерует текстовые блоки по шаблону. Пишешь формат один раз в первом блоке — с ведущими нулями, приставками и любыми символами, например «001 A», — выделяешь все блоки и запускаешь скрипт: каждый получает следующий номер в том же формате. Удобно для чертежей, листов и планов.",
+"ממספר תיבות טקסט לפי תבנית. כותבים את הפורמט פעם אחת בתיבה הראשונה — עם אפסים מובילים, קידומות וכל סימן נוסף, למשל „001 A” — בוחרים את כל התיבות ומריצים את הסקריפט: כל אחת מקבלת את המספר הבא באותו פורמט. נוח לשרטוטים, גיליונות ותוכניות."
+],
+"One shape selected: area, width and height update live": [
+"Выделена одна фигура: площадь, ширина и высота обновляются на ходу",
+"צורה אחת נבחרה: השטח, הרוחב והגובה מתעדכנים בזמן אמת"
+],
+"Auto numbering: the format from the first block is applied to all selected text blocks": [
+"Автонумерация: формат из первого блока применяется ко всем выделенным текстовым блокам",
+"מספור אוטומטי: הפורמט מהתיבה הראשונה מוחל על כל תיבות הטקסט שנבחרו"
+],
+"Batch export for 3ds Max": [
+"Пакетный экспорт для 3ds Max",
+"ייצוא קבוצתי ל-3ds Max"
+],
+"3ds Max plugin": [
+"Плагин для 3ds Max",
+"תוסף ל-3ds Max"
+],
+"3D printing workflow": [
+"Подготовка к 3D-печати",
+"הכנה להדפסת תלת-ממד"
+],
+"Exports many objects in one go: every group becomes a separate file, named after the group, in the folder and format you choose.": [
+"Экспортирует много объектов за один раз: каждая группа становится отдельным файлом с именем группы, в выбранной папке и формате.",
+"מייצא הרבה אובייקטים בבת אחת: כל קבוצה הופכת לקובץ נפרד בשם הקבוצה, בתיקייה ובפורמט שבוחרים."
+],
+"• Group the objects you need, each group named as the future file": [
+"• Группируешь нужные объекты, каждую группу называешь как будущий файл",
+"• מקבצים את האובייקטים, וכל קבוצה נקראת בשם הקובץ העתידי"
+],
+"• Choose the format (STL and others) and the output folder": [
+"• Выбираешь формат (STL и другие) и папку",
+"• בוחרים פורמט (STL ואחרים) ותיקיית יעד"
+],
+"• Press Export: all groups are saved in one pass, sorted and named by their group names": [
+"• Нажимаешь Export: все группы сохраняются за один проход, по порядку и с именами групп",
+"• לוחצים Export: כל הקבוצות נשמרות במעבר אחד, ממוינות ובשמות הקבוצות"
+],
+"• The export settings dialog can be shown only once for the whole batch": [
+"• Окно настроек экспорта можно показать один раз на всю пачку",
+"• אפשר להציג את חלון הגדרות הייצוא פעם אחת לכל הקבוצה"
+],
+"Why": [
+"Зачем",
+"למה"
+],
+"Handy when dozens of parts need to go to the 3D printer: instead of exporting them one by one, the whole set is ready in seconds.": [
+"Удобно, когда на 3D-принтер нужно отправить десятки деталей: вместо экспорта по одной весь набор готов за секунды.",
+"נוח כשצריך לשלוח עשרות חלקים למדפסת תלת-ממד: במקום לייצא אחד-אחד, כל הסט מוכן בשניות."
+],
+"Decision hub: how I run a project with AI": [
+"Хаб решений: как я веду проект с ИИ",
+"מרכז החלטות: איך אני מנהל פרויקט עם AI"
+],
+"Let’s Scale studio": [
+"Студия Let’s Scale",
+"הסטודיו של Let’s Scale"
+],
+"AI does the legwork — questions, options, mock-ups, reports — and puts every decision on its own page. I review, choose and comment there: the main work happens in the hub, not in a chat.": [
+"ИИ делает черновую работу — вопросы, варианты, макеты, отчёты — и выносит каждое решение на отдельную страницу. Я смотрю, выбираю и комментирую там: основная работа идёт в хабе, а не в чате.",
+"ה-AI עושה את העבודה השחורה — שאלות, אפשרויות, הדמיות, דוחות — ומעלה כל החלטה לדף משלה. שם אני בודק, בוחר ומגיב: העבודה העיקרית קורית במרכז ההחלטות, לא בצ'אט."
+],
+"• A questionnaire: AI collects every open question with its proposal and options, I answer in rounds — 30 rounds so far": [
+"• Опросник: ИИ собирает каждый открытый вопрос со своим предложением и вариантами, я отвечаю раундами — уже 30 раундов",
+"• שאלון: ה-AI אוסף כל שאלה פתוחה עם הצעה ואפשרויות, ואני עונה בסבבים — עד עכשיו 30 סבבים"
+],
+"• A page for every design decision: options on real game screens, Take / No and a comment, saved automatically": [
+"• Страница на каждое дизайн-решение: варианты на настоящих экранах игры, «Беру / Нет» и комментарий, всё сохраняется само",
+"• דף לכל החלטת עיצוב: אפשרויות על מסכי משחק אמיתיים, „לוקח / לא” ותגובה, הכול נשמר אוטומטית"
+],
+"• A catalogue of every object in the game with its picture and size": [
+"• Каталог всех объектов игры с картинкой и размером",
+"• קטלוג של כל הפריטים במשחק עם תמונה וגודל"
+],
+"• Each round ends with a short list of what to check in Unity and what was done": [
+"• Каждый раунд заканчивается коротким списком: что проверить в Unity и что сделано",
+"• כל סבב מסתיים ברשימה קצרה: מה לבדוק ב-Unity ומה נעשה"
+],
+"Why it works": [
+"Почему это работает",
+"למה זה עובד"
+],
+"Decisions live in one place instead of a long chat. Every choice is saved, the AI reads it back and implements it, and I spend my time choosing, not prompting.": [
+"Решения живут в одном месте, а не в длинном чате. Каждый выбор сохраняется, ИИ сам его считывает и делает, а я трачу время на выбор, а не на промпты.",
+"ההחלטות נמצאות במקום אחד ולא בצ'אט ארוך. כל בחירה נשמרת, ה-AI קורא אותה ומיישם, ואני משקיע את הזמן בבחירה ולא בכתיבת פרומפטים."
+],
+"In numbers": [
+"В цифрах",
+"במספרים"
+],
+"89 decision pages across five topics — interface style, art and silhouettes, game mechanics, promotion and the working process — and 30 rounds of questions for one game.": [
+"89 страниц-решений по пяти темам — стиль интерфейса, арт и силуэты, механики, продвижение и процесс работы — и 30 раундов вопросов для одной игры.",
+"89 דפי החלטה בחמישה נושאים — סגנון ממשק, אמנות וצלליות, מכניקות משחק, קידום ותהליך העבודה — ו-30 סבבי שאלות למשחק אחד."
+],
+"Night mode: five dark themes tried on 16 real game screens (the screenshots show the Russian version of the game)": [
+"Ночная тема: пять тёмных тем на 16 настоящих экранах игры (на снимках русская версия игры)",
+"מצב לילה: חמש ערכות כהות על 16 מסכי משחק אמיתיים (בצילומים — הגרסה הרוסית של המשחק)"
+],
+"Collection cards: metal options on real objects, one row per idea": [
+"Карточки коллекции: варианты металла на реальных объектах, по ряду на идею",
+"קלפי האוסף: אפשרויות מתכת על פריטים אמיתיים, שורה לכל רעיון"
+],
+"Collection screen: five layout variants as phone mock-ups": [
+"Экран коллекции: пять вариантов раскладки на макетах телефона",
+"מסך האוסף: חמש אפשרויות פריסה על הדמיות טלפון"
+],
+"Content catalogue — Animals: every object in the game with its silhouette and real size": [
+"Каталог контента — Животные: каждый объект игры с силуэтом и реальным размером",
+"קטלוג התוכן — בעלי חיים: כל פריט במשחק עם צללית וגודל אמיתי"
+],
+"Content catalogue — City and architecture: landmarks sorted by real height": [
+"Каталог контента — Город и архитектура: достопримечательности по реальной высоте",
+"קטלוג התוכן — עיר ואדריכלות: אתרים לפי הגובה האמיתי"
+],
+"Interface style: the same screens in the current look and in neo-brutalism, with pros, cons and porting cost": [
+"Стиль интерфейса: одни и те же экраны в нынешнем виде и в необрутализме, с плюсами, минусами и ценой переноса",
+"סגנון ממשק: אותם מסכים בעיצוב הנוכחי ובניאו-ברוטליזם, עם יתרונות, חסרונות ועלות העברה"
+],
+"Decision pages grouped by topic": [
+"Страницы-решения по темам",
+"דפי החלטה לפי נושא"
+],
+"Game and code audit: five areas, every item with a fix, a cost and a “now / later / no” choice": [
+"Аудит игры и кода: пять областей, у каждого пункта исправление, стоимость и выбор «сейчас / позже / нет»",
+"ביקורת משחק וקוד: חמישה תחומים, לכל סעיף תיקון, עלות ובחירה „עכשיו / אחר כך / לא”"
+],
+"Each round ends with “check in Unity” and “done this round”": [
+"Каждый раунд заканчивается списками «проверить в Unity» и «сделано в раунде»",
+"כל סבב מסתיים ב„לבדוק ב-Unity” וב„מה נעשה בסבב”"
+],
+"Art pipeline for the games": [
+"Арт-конвейер для игр",
+"צנרת אמנות למשחקים"
+],
+"Most of the games’ visuals were generated — not one by one, but as a pipeline with a recipe, batches and acceptance checks.": [
+"Большая часть визуала игр сгенерирована — не по одной картинке, а конвейером с рецептом, пачками и проверкой приёмки.",
+"רוב הוויזואליה של המשחקים נוצרה ב-AI — לא תמונה אחר תמונה, אלא בצנרת עם מתכון, אצוות ובדיקות קבלה."
+],
+"Batches instead of single images": [
+"Пачки вместо отдельных картинок",
+"אצוות במקום תמונות בודדות"
+],
+"One long, precise prompt and a batch of 100 images at a time. I started from a large set of references and moved step by step from them to my own style.": [
+"Один длинный точный промпт и пачка по 100 картинок за раз. Я начал с большого набора референсов и шаг за шагом пришёл от них к своему стилю.",
+"פרומפט אחד ארוך ומדויק ואצווה של 100 תמונות בכל פעם. התחלתי ממאגר גדול של רפרנסים ועברתי צעד אחר צעד לסגנון משלי."
+],
+"Skins in Weavy": [
+"Скины в Weavy",
+"סקינים ב-Weavy"
+],
+"A three-input recipe: the reference style, the new pose and its mask go in, the frog in that style and pose comes out. Claude Code prepared the inputs, checked every export and assembled the skins into the game.": [
+"Рецепт с тремя входами: на вход стиль-референс, новая поза и её маска, на выходе — лягушка в этом стиле и позе. Claude Code готовил входы, проверял каждую выгрузку и собирал скины в игру.",
+"מתכון עם שלושה קלטים: סגנון הרפרנס, התנוחה החדשה והמסכה שלה נכנסים, והצפרדע בסגנון ובתנוחה האלה יוצאת. Claude Code הכין את הקלטים, בדק כל ייצוא והרכיב את הסקינים במשחק."
+],
+"Also": [
+"Ещё",
+"עוד"
+],
+"3D models generated from photos, for objects and prototypes.": [
+"3D-модели, сгенерированные по фото, — для объектов и прототипов.",
+"מודלים בתלת-ממד שנוצרו מתמונות — לאובייקטים ולאבות טיפוס."
+],
+"Artem Svirinovskyi · Tel Aviv": [
+"Артём Свириновский · Тель-Авив",
+"ארטיום סבירינובסקי · תל אביב"
+],
+"Hide": [
+"Скрыть",
+"הסתר"
+],
+"Copied": [
+"Скопировано",
+"הועתק"
+]
+};
+  var ATTRS = ['data-hide-back-text', 'alt'];
+  var de = document.documentElement;
+  function norm(s) { return (s || '').replace(/\s+/g, ' ').trim(); }
+  function detect() {
+    var p = null;
+    try { p = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (p === 'iw') p = 'he';
+    if (p && SUP.indexOf(p) >= 0) return p;
+    try { var s = localStorage.getItem('vias_lang'); if (SUP.indexOf(s) >= 0) return s; } catch (e) {}
+    var L = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < L.length; i++) {
+      var l = (L[i] || '').toLowerCase();
+      if (/^(ru|uk|be|kk)/.test(l)) return 'ru';
+      if (/^(he|iw)/.test(l)) return 'he';
+      if (/^en/.test(l)) return 'en';
+    }
+    return 'en';
+  }
+  var lang = detect();
+  if (lang !== 'en') { de.classList.add('vl-wait'); setTimeout(function () { de.classList.remove('vl-wait'); }, 1500); }
+  function tr(en, l) { if (l === 'en') return en; var t = T[en]; return t ? t[IDX[l]] : null; }
+  var busy = false;
+  function textNodes(root) {
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n, out = [];
+    while ((n = w.nextNode())) {
+      var p = n.parentNode && n.parentNode.nodeName;
+      if (p === 'SCRIPT' || p === 'STYLE' || p === 'NOSCRIPT') continue;
+      out.push(n);
+    }
+    return out;
+  }
+  function applyText(root, l) {
+    var ns = textNodes(root);
+    for (var i = 0; i < ns.length; i++) {
+      var n = ns[i], en = n.__vlEn;
+      if (en === undefined) {
+        var k = norm(n.nodeValue);
+        if (!k || !T[k]) continue;
+        // keep the node's own leading/trailing whitespace
+        var m = /^(\s*)[\s\S]*?(\s*)$/.exec(n.nodeValue);
+        n.__vlEn = en = k; n.__vlPad = [m[1], m[2]];
+      }
+      var t = tr(en, l) || en, v = n.__vlPad[0] + t + n.__vlPad[1];
+      if (n.nodeValue !== v) n.nodeValue = v;
+      var el = n.parentNode;
+      if (el && el.nodeType === 1) {
+        var box = el.closest('[field],.t-text,.t-descr,.t-name,.t-title,.tn-atom') || el;
+        if (l === 'he' && getComputedStyle(box).textAlign === 'left') box.classList.add('vl-r');
+        if (l !== 'he') box.classList.remove('vl-r');
+      }
+    }
+  }
+  function applyAttrs(l) {
+    ATTRS.forEach(function (a) {
+      var els = document.querySelectorAll('#allrecords [' + a + ']');
+      for (var i = 0; i < els.length; i++) {
+        var e = els[i], key = 'data-vl-en-' + a, en = e.getAttribute(key);
+        if (en === null) { en = norm(e.getAttribute(a)); if (!T[en]) continue; e.setAttribute(key, en); }
+        var t = tr(en, l) || en;
+        if (e.getAttribute(a) !== t) e.setAttribute(a, t);
+      }
+    });
+  }
+  // Accordions: where one block already has EN / HE / RU tabs (capsules, lamps), show only the tab
+  // of the current language. A single "EN" tab gets relabelled, because its text is translated in place.
+  function applyTabs(l) {
+    var titles = document.querySelectorAll('#allrecords .t585__title');
+    var recs = {};
+    for (var i = 0; i < titles.length; i++) {
+      var t = titles[i];
+      if (!t.__vlTab) t.__vlTab = norm(t.textContent);
+      var rec = t.closest('.t-rec'); if (!rec) continue;
+      (recs[rec.id] = recs[rec.id] || []).push(t);
+    }
+    Object.keys(recs).forEach(function (id) {
+      var ts = recs[id], codes = ts.map(function (t) { return t.__vlTab; });
+      var multi = codes.indexOf('EN') >= 0 && (codes.indexOf('HE') >= 0 || codes.indexOf('RU') >= 0);
+      ts.forEach(function (t) {
+        var item = t.closest('.t585__accordion') || t.closest('.t585__wrapper');
+        if (multi) {
+          if (item) item.classList.toggle('vl-off', t.__vlTab !== l.toUpperCase());
+        } else if (t.__vlTab === 'EN') {
+          var v = l.toUpperCase();
+          if (t.textContent !== v) t.textContent = v;
+        }
+      });
+    });
+  }
+  function apply(l) {
+    busy = true;
+    lang = l; de.lang = l; de.classList.toggle('vl-rtl', l === 'he');
+    var root = document.getElementById('allrecords') || document.body;
+    applyText(root, l); applyAttrs(l); applyTabs(l);
+    if (!de.__vlTitle) de.__vlTitle = norm(document.title);
+    var tt = tr(de.__vlTitle, l); if (tt && document.title !== tt) document.title = tt;
+    var sw = document.getElementById('vl-switch');
+    if (sw) for (var j = 0; j < sw.children.length; j++) sw.children[j].classList.toggle('on', sw.children[j].getAttribute('data-l') === l);
+    busy = false;
+  }
+  function build() {
+    if (document.getElementById('vl-switch')) return;
+    var sw = document.createElement('div'); sw.id = 'vl-switch'; sw.setAttribute('role', 'group'); sw.setAttribute('aria-label', 'Language');
+    SUP.forEach(function (l) {
+      var b = document.createElement('button'); b.type = 'button'; b.setAttribute('data-l', l);
+      b.textContent = LABEL[l]; b.setAttribute('aria-label', NAME[l]); b.setAttribute('lang', l);
+      b.onclick = function () { try { localStorage.setItem('vias_lang', l); } catch (e) {} apply(l); };
+      sw.appendChild(b);
+    });
+    document.body.appendChild(sw);
+  }
+  function init() {
+    build(); apply(lang); de.classList.remove('vl-wait');
+    setTimeout(function () { apply(lang); }, 600);
+    setTimeout(function () { apply(lang); }, 2000);
+    // Tilda swaps some texts on the fly ("Show more" / "Hide", "Copied"): translate those too.
+    var q = null;
+    try {
+      new MutationObserver(function () {
+        if (busy || lang === 'en' || q) return;
+        q = setTimeout(function () { q = null; apply(lang); }, 30);
+      }).observe(document.getElementById('allrecords') || document.body, { childList: true, subtree: true, characterData: true });
+    } catch (e) {}
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script>
